@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Madinah Sponsorship &amp; Recruitment Compass — Creed-to-Commerce™</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--g:#0F4D3A;--g2:#0A3A2B;--g3:#E6F0EA;--gold:#C9A227;--gold2:#F4EBC6;--cream:#FAF7EC;--ink:#1c2a24;--mut:#5b6b63;--line:#d9dfd3;--red:#B3261E;--amb:#B26A00;--ok:#1B7F4B;--card:#fff}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--cream);color:var(--ink);font-size:15px;line-height:1.5}
+h1,h2,h3,.serif{font-family:Amiri,"Times New Roman",serif}
+h2{font-size:26px;margin:0 0 4px;color:var(--g)}
+h3{font-size:20px;margin:0 0 8px;color:var(--g)}
+h4{margin:14px 0 6px;color:var(--g2);font-size:15px}
+p{margin:6px 0}
+.top{background:linear-gradient(135deg,var(--g2),var(--g));color:#fff;padding:14px 22px;border-bottom:4px solid var(--gold);display:flex;flex-wrap:wrap;align-items:center;gap:14px;justify-content:space-between}
+.bism{font-family:Amiri,serif;font-size:26px;color:var(--gold2);width:100%;text-align:center;line-height:1.6}
+.brand h1{margin:0;font-size:28px;color:#fff}
+.brand p{margin:0;color:var(--gold2);font-size:14px}
+.topbtns{display:flex;gap:8px;flex-wrap:wrap}
+.body{display:flex;min-height:70vh}
+nav{width:250px;flex:none;background:#fff;border-right:1px solid var(--line);padding:10px 8px;position:sticky;top:0;align-self:flex-start;max-height:100vh;overflow:auto}
+nav .grp{font-size:11px;letter-spacing:.06em;font-weight:700;color:var(--gold);background:var(--g2);padding:5px 9px;border-radius:5px;margin:12px 0 4px}
+nav a{display:block;padding:8px 10px;border-radius:6px;color:var(--ink);text-decoration:none;cursor:pointer;font-size:14px;position:relative}
+nav a:hover{background:var(--g3)}
+nav a.on{background:var(--g);color:#fff;font-weight:600}
+nav a .dot{position:absolute;right:8px;top:9px;background:var(--red);color:#fff;border-radius:9px;font-size:11px;padding:0 6px}
+main{flex:1;padding:22px;min-width:0;max-width:1250px}
+footer{background:var(--g2);color:var(--gold2);text-align:center;padding:14px;font-size:13px;border-top:4px solid var(--gold)}
+.btn{background:var(--g);color:#fff;border:0;border-radius:6px;padding:9px 14px;font-size:14px;cursor:pointer;font-weight:600}
+.btn:hover{background:var(--g2)}
+.btn.gold{background:var(--gold);color:#222}
+.btn.gold:hover{background:#b3901f}
+.btn.ghost{background:transparent;color:var(--g);border:1px solid var(--g)}
+.btn.red{background:var(--red)}
+.btn.sm{padding:4px 9px;font-size:12px}
+.top .btn.ghost{color:#fff;border-color:var(--gold2)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;margin:12px 0}
+.card.gold{border-left:5px solid var(--gold)}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:14px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin:12px 0}
+.tile{background:#fff;border:1px solid var(--line);border-top:4px solid var(--gold);border-radius:8px;padding:12px}
+.tile .v{font-size:25px;font-weight:700;color:var(--g);font-family:Amiri,serif}
+.tile .l{font-size:12px;color:var(--mut);text-transform:uppercase;letter-spacing:.04em}
+.tile .s{font-size:12px;color:var(--mut)}
+.phase3{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px;margin:12px 0}
+.phase{border-radius:10px;padding:14px;color:#fff}
+.phase.a{background:var(--g2)}.phase.b{background:var(--g)}.phase.c{background:#5d7f2e}
+.phase h3{color:var(--gold2);margin:0}
+.phase p{font-size:13px;margin:4px 0}
+.phase .big{font-size:20px;font-weight:700;font-family:Amiri,serif}
+table.t{width:100%;border-collapse:collapse;font-size:13.5px}
+table.t th{background:var(--g3);color:var(--g2);text-align:left;padding:7px 8px;border-bottom:2px solid var(--gold);position:sticky;top:0;white-space:nowrap}
+table.t td{padding:7px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+table.t tr:hover td{background:#fbfaf3}
+.scroll{overflow:auto;max-height:560px;border:1px solid var(--line);border-radius:8px}
+.tag{display:inline-block;padding:1px 8px;border-radius:10px;font-size:12px;background:var(--g3);color:var(--g2);white-space:nowrap}
+.tag.ok{background:#d9f0e2;color:var(--ok)}.tag.warn{background:#fff0d1;color:var(--amb)}.tag.bad{background:#fbe0de;color:var(--red)}.tag.gold{background:var(--gold2);color:#6b5400}
+.alert{border-left:5px solid var(--amb);background:#fff8e8;padding:8px 12px;margin:6px 0;border-radius:6px;display:flex;justify-content:space-between;gap:10px;align-items:center}
+.alert.hi{border-color:var(--red);background:#fdeceb}.alert.low{border-color:var(--g);background:var(--g3)}
+.banner{background:var(--gold2);border:1px solid var(--gold);padding:10px 14px;border-radius:8px;margin-bottom:12px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.bar{height:14px;background:#e9ecde;border-radius:7px;overflow:hidden}
+.bar>i{display:block;height:100%;background:var(--g)}
+.bar.gold>i{background:var(--gold)}
+.frow{display:flex;align-items:center;gap:10px;margin:6px 0}
+.frow .lb{width:150px;font-size:13px}.frow .bar{flex:1;height:22px}.frow .n{width:120px;font-size:13px;text-align:right}
+.fld{display:flex;flex-direction:column;gap:3px}
+.fld.full{grid-column:1/-1}
+.fld label{font-size:12.5px;font-weight:600;color:var(--g2)}
+.fld small{color:var(--mut);font-size:12px}
+input,select,textarea{font:inherit;padding:7px 9px;border:1px solid #bcc7bd;border-radius:6px;background:#fff;width:100%;color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--gold);border-color:var(--gold)}
+.chk{display:flex;gap:8px;align-items:center;font-weight:400!important}
+.chk input{width:auto}
+.formgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.modal{position:fixed;inset:0;background:rgba(10,58,43,.55);z-index:50;display:flex;align-items:flex-start;justify-content:center;padding:30px 12px;overflow:auto}
+.modal[hidden]{display:none}
+.mbox{background:#fff;border-radius:12px;max-width:820px;width:100%;padding:20px;border-top:6px solid var(--gold)}
+.mbox h3{margin-top:0}
+.mfoot{display:flex;gap:8px;justify-content:space-between;margin-top:16px;flex-wrap:wrap}
+.err{color:var(--red);font-weight:600;margin-top:8px}
+#toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:var(--g2);color:#fff;padding:10px 18px;border-radius:8px;z-index:90;display:none;border:1px solid var(--gold);max-width:90vw}
+.board{display:flex;gap:10px;overflow:auto;padding-bottom:10px;align-items:flex-start}
+.col{min-width:215px;width:215px;background:#f1f3e8;border-radius:8px;padding:8px}
+.col h5{margin:0 0 6px;font-size:13px;color:var(--g2);display:flex;justify-content:space-between}
+.col.creed{border-top:4px solid var(--g2)}.col.service{border-top:4px solid var(--g)}.col.commerce{border-top:4px solid #5d7f2e}.col.lost{border-top:4px solid #999}
+.kc{background:#fff;border:1px solid var(--line);border-radius:6px;padding:8px;margin:6px 0;font-size:13px}
+.kc b{display:block;cursor:pointer;color:var(--g)}
+.kc .mv{display:flex;justify-content:space-between;margin-top:6px}
+.kc.overdue{border-left:4px solid var(--red)}
+.mut{color:var(--mut)}.sm{font-size:12.5px}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.toolbar input,.toolbar select{width:auto;min-width:150px}
+.rowline{display:flex;justify-content:space-between;gap:10px;padding:5px 0;border-bottom:1px dashed var(--line)}
+ul.chk{list-style:none;padding:0;margin:0}
+ul.chk li{padding:5px 0;display:flex;gap:8px;align-items:flex-start}
+.ok-i{color:var(--ok);font-weight:700}.no-i{color:var(--red);font-weight:700}
+.manual h3{border-bottom:2px solid var(--gold);padding-bottom:3px;margin-top:22px}
+.manual ol,.manual ul{padding-left:22px}
+.manual li{margin:4px 0}
+.callout{background:var(--gold2);border-left:5px solid var(--gold);padding:10px 14px;border-radius:6px;margin:10px 0}
+.menubtn{display:none}
+#printRoot{display:none}
+.pr{font-family:Georgia,serif;color:#111;font-size:12.5px;line-height:1.45}
+.pr h1{font-size:22px;color:#0F4D3A;margin:0}
+.pr h2{font-size:16px;color:#0F4D3A;border-bottom:2px solid #C9A227;margin:16px 0 6px;padding-bottom:2px}
+.pr .bism{color:#0F4D3A;font-size:22px;text-align:center;width:auto}
+.pr table{width:100%;border-collapse:collapse;margin:6px 0}
+.pr th,.pr td{border:1px solid #bbb;padding:4px 6px;text-align:left;vertical-align:top;font-size:12px}
+.pr th{background:#E6F0EA}
+.pr .ft{margin-top:22px;border-top:2px solid #C9A227;padding-top:6px;text-align:center;color:#0F4D3A;font-size:11px}
+.pr .note{background:#F4EBC6;padding:6px 10px;border-left:4px solid #C9A227;margin:8px 0}
+.pr .kv{display:grid;grid-template-columns:200px 1fr;gap:2px 10px}
+.pr .kv b{color:#0A3A2B}
+@media (max-width:860px){
+ .body{display:block}
+ nav{width:100%;position:static;max-height:none;display:none}
+ nav.open{display:block}
+ .menubtn{display:inline-block}
+ main{padding:14px}
+ .frow .lb{width:100px}
+}
+@media print{
+ #app,.modal,#toast{display:none!important}
+ #printRoot{display:block!important}
+ body{background:#fff}
+ @page{margin:14mm}
+ .pr h2{page-break-after:avoid}
+ .pr table{page-break-inside:auto}.pr tr{page-break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<div id="app">
+ <header class="top">
+  <div class="bism" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div>
+  <div class="brand">
+   <h1>Madinah Sponsorship &amp; Recruitment Compass</h1>
+   <p id="instLine"></p>
+  </div>
+  <div class="topbtns">
+   <button class="btn ghost menubtn" onclick="document.getElementById('nav').classList.toggle('open')">☰ Menu</button>
+   <button class="btn gold" onclick="A.print('summary')">🖨 Manager Report (PDF)</button>
+   <button class="btn ghost" onclick="A.go('manual')">User Manual</button>
+  </div>
+ </header>
+ <div class="body">
+  <nav id="nav"></nav>
+  <main id="main"></main>
+ </div>
+ <footer>
+  <b>Creed-to-Commerce™</b> — begin with trustworthy intentions · translate them into useful services · sustain the work through responsible commercial management<br>
+  The Balanced Middle Path Academy, LLC (BMPA) · Created by Professor Zaid Ansari · Data stays in this browser unless you export it.
+ </footer>
+</div>
+<div id="modal" class="modal" hidden></div>
+<div id="toast"></div>
+<div id="printRoot"></div>
+<input type="file" id="importFile" accept=".json" hidden>
+<script>
+/* ===== Core: helpers, state, constants ===== */
+const LS='bmpa_msrc_v1';
+const $=s=>document.querySelector(s);
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const num=x=>{const n=parseFloat(x);return isNaN(n)?0:n};
+const fmt=n=>'SAR '+Math.round(num(n)).toLocaleString('en-US');
+const pct=(a,b)=>b>0?Math.round(a/b*1000)/10:null;
+const pctS=p=>p==null?'—':p+'%';
+const uid=()=>Math.random().toString(36).slice(2,9)+Date.now().toString(36).slice(-3);
+const ymd=d=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+const todayStr=()=>ymd(new Date());
+const addDays=(s,n)=>{const d=new Date(s+'T00:00:00');d.setDate(d.getDate()+n);return ymd(d)};
+const daysBetween=(a,b)=>Math.round((new Date(b+'T00:00:00')-new Date(a+'T00:00:00'))/864e5);
+const nl2=s=>esc(s).replace(/\n/g,'<br>');
+const sum=(arr,f)=>arr.reduce((t,x)=>t+num(f(x)),0);
+
+const STAGES=[['Identified','creed'],['Discovery meeting','creed'],['Needs assessment','service'],['Proposal sent','service'],['Paid pilot','service'],['Negotiation','commerce'],['Agreement signed','commerce'],['Delivering','commerce'],['Renewal','commerce'],['Lost','lost']];
+const SN=STAGES.map(s=>s[0]);
+const STU=['Inquiry','Course explained','Placement assessed','Timetable confirmed','Registered & paid','Attending','Completed','Withdrew','Not enrolled'];
+const DEFSEG=['Hospitality (hotels, serviced apartments)','Retailers','Healthcare providers','Employers with multilingual teams','University-bound learners','Residents seeking practical Arabic'];
+const SP_SOURCES=['Professional introduction','Business gathering','Existing customer','Referral','Cold outreach (with consent)','Other'];
+const ST_SOURCES=['Walk-in','WhatsApp inquiry','Instagram','TikTok','Referral','Employer/sponsor','University board','Event','Website','Other'];
+const CONSENT=['Not recorded','Given','Withdrawn'];
+const RISKY=/guarantee|guaranteed|fluen(t|cy)\s+(in|within|by)|\b100\s?%|master(y)?\s+(of\s+)?(english|arabic)|we promise|visa|iqama|immigration|residency|work permit|job placement|guaranteed job/i;
+
+const blank=()=>({v:1,sample:false,ui:{spView:'board',stQ:'',stStage:'',stSrc:'',intRef:''},
+ inst:{name:'',manager:'',lic:'Not verified',licRef:'',licDate:'',licNote:'',certNote:''},
+ courses:[],teachers:[],claims:[],
+ segments:DEFSEG.map(n=>({id:uid(),name:n,status:'To explore',notes:''})),
+ discovery:[],offers:[],sponsors:[],interactions:[],students:[],agreements:[],cohorts:[],
+ plan:{start:'',done:{},notes:{}},
+ comp:{rate:5,minCompletion:80,minSat:4,partial:50},
+ calc:{rev:12000,disc:3000,target:30,learners:15,teach:5000,mat:600,adm:800,asm:600,fac:700,oth:300},
+ spend:{students:0,sponsors:0},targets:{meetings:20,proposals:8,assessments:40,attendance:75},
+ ethics:{}
+});
+
+let S=load(), TAB='home';
+function load(){
+ try{const j=localStorage.getItem(LS);if(j){const o=JSON.parse(j);const b=blank();for(const k in o){if(o[k]&&typeof o[k]==='object'&&!Array.isArray(o[k])&&b[k]&&typeof b[k]==='object')Object.assign(b[k],o[k]);else b[k]=o[k]}return b}}catch(e){}
+ return sampleData();
+}
+function save(){try{localStorage.setItem(LS,JSON.stringify(S))}catch(e){}}
+function toast(m){const t=$('#toast');t.textContent=m;t.style.display='block';clearTimeout(toast.h);toast.h=setTimeout(()=>t.style.display='none',3200)}
+
+/* ===== Sample data (illustrative, clearly labelled) ===== */
+function sampleData(){
+ const o=blank(),t=todayStr(),d=n=>addDays(t,n);
+ o.sample=true;
+ o.inst={name:'Your Language Institute (sample)',manager:'Sponsorship & Recruitment Manager',lic:'Pending',licRef:'',licDate:'',licNote:'Describe your licence exactly as issued — nothing more.',certNote:'The certificate confirms attendance and completion of the course; it is not an external examination result.'};
+ const c1=uid(),c2=uid();
+ o.courses=[
+  {id:c1,name:'English for Hospitality Staff (sample)',audience:'Hotel front-desk & guest relations',level:'A2–B1',hours:24,capacity:18,schedule:'Two evening sessions per week',fee:800,assessment:'Initial placement + role-play assessment + final performance report',refund:'Sample: full refund before week 1; pro-rata after.',certificate:'Certificate of completion'},
+  {id:c2,name:'Practical Arabic for Residents (sample)',audience:'Non-Arabic-speaking residents',level:'Beginner',hours:30,capacity:14,schedule:'Weekend mornings',fee:900,assessment:'Oral check-in at weeks 4 and 8',refund:'',certificate:''}
+ ];
+ o.teachers=[{id:uid(),name:'Teacher A (sample)',qual:'CELTA / MA Applied Linguistics (sample)',courses:'English for Hospitality Staff',notes:''},{id:uid(),name:'Teacher B (sample)',qual:'',courses:'Practical Arabic for Residents',notes:'Qualification record still to be collected'}];
+ o.claims=[{id:uid(),claim:'Teachers hold recognised teaching qualifications',type:'Other',evidence:'Qualification copies on file',status:'Substantiated',by:'Academic Director'},{id:uid(),claim:'Course prepares learners for an external English exam',type:'Exam preparation',evidence:'',status:'Pending evidence',by:''}];
+ o.segments[0].status='Conversations held';o.segments[0].notes='Hotel managers report repeated guest-complaint handling problems.';
+ o.segments[2].status='Conversations held';
+ o.discovery=[
+  {id:uid(),date:d(-30),org:'Al-Sample Hotel Group (sample)',seg:o.segments[0].id,problems:'Front-desk staff struggle to explain room arrangements and handle complaints politely in English.',who:'Front-desk and guest-relations team (about 15 staff)',cost:'Repeated complaints; manager time spent re-explaining; lost repeat bookings.',improve:'Staff able to handle the 10 most common guest requests without escalation.',willing:'Yes',next:'Propose a paid pilot'},
+  {id:uid(),date:d(-12),org:'Sample Pharmacy Chain (sample)',seg:o.segments[2].id,problems:'Non-Arabic-speaking pharmacists need clearer workplace instructions.',who:'Branch supervisors',cost:'Not yet quantified',improve:'To be defined in needs assessment',willing:'Maybe',next:'Needs assessment interviews'}
+ ];
+ const sp=(org,type,seg,src,stage,extra)=>Object.assign({id:uid(),org,type,seg,source:src,stage,beneficiary:'',contactName:'',contactInfo:'',approverName:'',approverRole:'',approverOk:false,learners:0,value:0,nextStep:'',nextDate:'',consent:'Not recorded',consentDate:'',notes:'',created:d(-40)},extra);
+ const sHotel=sp('Al-Sample Hotel Group (sample)','Employer',o.segments[0].id,'Professional introduction','Paid pilot',{beneficiary:'Front-desk and guest-relations team',contactName:'Training Manager (sample)',approverName:'General Manager (sample)',approverRole:'General Manager',approverOk:true,learners:15,value:12000,nextStep:'Review pilot attendance report with sponsor',nextDate:d(5),consent:'Given',consentDate:d(-30)});
+ const sPharm=sp('Sample Pharmacy Chain (sample)','Employer',o.segments[2].id,'Business gathering','Needs assessment',{beneficiary:'Branch supervisors',contactName:'Operations Supervisor (sample)',learners:10,value:9000,nextStep:'Interview pharmacy supervisors',nextDate:d(-2),consent:'Given',consentDate:d(-12)});
+ const sRetail=sp('Sample Retail Co (sample)','Employer',o.segments[1].id,'Existing customer','Proposal sent',{beneficiary:'Sales floor staff',contactName:'HR Officer (sample)',learners:12,value:10500,nextStep:'Follow up on proposal',nextDate:d(2),consent:'Given',consentDate:d(-20)});
+ const sFound=sp('Sample Family Foundation (sample)','Scholarship donor','','Referral','Discovery meeting',{beneficiary:'Scholarship learners',contactName:'Trustee (sample)',learners:8,value:16000,nextStep:'Agree eligibility and selection criteria',nextDate:d(9),consent:'Not recorded'});
+ const sLog=sp('Sample Logistics Firm (sample)','Employer',o.segments[3].id,'Professional introduction','Delivering',{beneficiary:'Multilingual warehouse team',contactName:'HR Manager (sample)',approverName:'Operations Director (sample)',approverRole:'Operations Director',approverOk:true,learners:14,value:14000,nextStep:'Open renewal discussion',nextDate:d(3),consent:'Given',consentDate:d(-80)});
+ const sClinic=sp('Sample Clinic Pilot (sample)','Employer',o.segments[2].id,'Referral','Renewal',{beneficiary:'Reception and nursing staff',contactName:'Clinic Manager (sample)',approverName:'Clinic Owner (sample)',approverRole:'Owner',approverOk:true,learners:8,value:5000,nextStep:'Confirm second-group start date',nextDate:d(7),consent:'Given',consentDate:d(-90)});
+ const sDental=sp('Sample Dental Centre (sample)','Employer',o.segments[2].id,'Business gathering','Identified',{});
+ const sLost=sp('Sample Language Club (sample)','Organization','','Cold outreach (with consent)','Lost',{notes:'Budget not available this year.'});
+ o.sponsors=[sHotel,sPharm,sRetail,sFound,sLog,sClinic,sDental,sLost];
+ o.interactions=[
+  {id:uid(),ref:sHotel.id,date:d(-30),type:'Meeting',summary:'Discovery meeting with GM and training manager; agreed to explore a paid pilot.',nextStep:'Send tailored pilot proposal',nextDate:d(-24)},
+  {id:uid(),ref:sHotel.id,date:d(-24),type:'Proposal presentation',summary:'Presented 8-week pilot; GM confirmed budget approval path.',nextStep:'Sign pilot agreement',nextDate:d(-20)},
+  {id:uid(),ref:sRetail.id,date:d(-6),type:'Email/WhatsApp',summary:'Sent proposal for 12 sales staff.',nextStep:'Follow up on proposal',nextDate:d(2)},
+  {id:uid(),ref:sPharm.id,date:d(-12),type:'Meeting',summary:'Met operations supervisor; recurring instruction-clarity problems described.',nextStep:'Interview pharmacy supervisors',nextDate:d(-2)}
+ ];
+ const costs=(a,b,c,e,f,g)=>({cTeach:a,cMat:b,cAdm:c,cAsm:e,cFac:f,cOth:g});
+ const oHotel=uid();
+ o.offers=[
+  Object.assign({id:oHotel,name:'8-week English Communication — Hotel Staff (sample)',seg:o.segments[0].id,sponsor:sHotel.id,participants:15,weeks:8,sessions:2,hrs:1.5,price:12000,objectives:'Explain hotel services; give directions; respond to common guest requests.',assessment:'Initial assessment; final performance report to the sponsor.',activities:'Workplace role-play activities based on real front-desk situations.',report:true,pilot:true,approved:true,status:'Accepted',notes:'Objectives agreed with the academic team.'},costs(5000,600,800,600,700,300)),
+  Object.assign({id:uid(),name:'Intensive Fluency Course (sample — contains risky wording)',seg:'',sponsor:'',participants:10,weeks:6,sessions:3,hrs:2,price:9000,objectives:'Guarantee fluency in 6 weeks and help with visa support.',assessment:'',activities:'',report:false,pilot:false,approved:false,status:'Draft',notes:'Shows how the promise-check flags wording that must not reach a sponsor.'},costs(4500,400,500,300,500,200))
+ ];
+ const mkA=(x)=>Object.assign({id:uid(),type:'Paid training (employer/organization)',status:'Draft',offer:'',learners:'',hours:'',value:'',collected:0,refunded:0,directCost:0,payments:'',cancel:'',reporting:'',instResp:'',spResp:'',eligibility:'',selection:'',renewal:'Not due',signDate:'',notes:''},x);
+ const aHotel=mkA({sponsor:sHotel.id,offer:oHotel,status:'Signed',learners:15,hours:24,value:12000,collected:6000,directCost:8000,payments:'Sample: 50% on signing; 50% at week 4',cancel:'Sample: 7 days written notice; sessions already delivered are payable',reporting:'Attendance, completion, assessment findings and next steps at week 4 and at the end',instResp:'Deliver agreed sessions; provide reports; keep learner data private',spResp:'Release staff for sessions; pay on the agreed dates; give timely feedback',renewal:'Pending',signDate:d(-28)});
+ const aLog=mkA({sponsor:sLog.id,status:'Signed',learners:14,hours:30,value:14000,collected:14000,directCost:9500,payments:'Sample: 3 equal instalments',cancel:'Sample: 14 days written notice',reporting:'Monthly attendance summary and final report',instResp:'Teaching, assessment, reporting',spResp:'Schedule release, payment',renewal:'Pending',signDate:d(-72)});
+ const aClinic=mkA({sponsor:sClinic.id,status:'Signed',learners:8,hours:20,value:5000,collected:5000,directCost:3300,payments:'Sample: paid in full on signing',cancel:'Sample: 7 days written notice',reporting:'Final report',instResp:'Teaching, assessment, reporting',spResp:'Schedule release, payment',renewal:'Renewed',signDate:d(-75)});
+ const aRetail=mkA({sponsor:sRetail.id,status:'Draft',learners:12,value:10500,payments:'',cancel:'',reporting:'',notes:'Missing clauses — see completeness check.'});
+ o.agreements=[aHotel,aLog,aClinic,aRetail];
+ const mkC=(x)=>Object.assign({id:uid(),name:'',sponsor:'',agreement:'',start:'',end:'',enrolled:0,completed:'',attendance:'',sat:'',issues:'',findings:'',next:'',limits:'',reportSent:'',renewalStarted:'',newGroup:false},x);
+ o.cohorts=[
+  mkC({name:'Hotel pilot — evening group (sample)',sponsor:sHotel.id,agreement:aHotel.id,start:d(-28),end:d(28),enrolled:15,attendance:88,issues:'',findings:'Mid-course check: strong progress in guest-request role-plays; complaint handling still developing.',next:'Add two extra complaint-handling role-plays.',limits:'Small group; results reflect attendance and practice outside class.'}),
+  mkC({name:'Logistics firm — shift group (sample)',sponsor:sLog.id,agreement:aLog.id,start:d(-70),end:d(14),enrolled:14,attendance:72,issues:'Staff are repeatedly pulled to work during class hours; attendance falling.',findings:'Placement review needed for 3 learners.',next:'Sponsor to fix schedule release; academic team to review placement.',limits:''}),
+  mkC({name:'Clinic pilot (sample)',sponsor:sClinic.id,agreement:aClinic.id,start:d(-75),end:d(-30),enrolled:8,completed:7,attendance:90,sat:5,findings:'Reception staff can now follow common patient-instruction vocabulary.',next:'Second group for nursing staff.',limits:'Modest, well-supported improvement; no external exam taken.',reportSent:d(-28),renewalStarted:d(-45),newGroup:true})
+ ];
+ /* students: 100 inquiries -> 40 assessments -> 20 paid enrollments (the PDF's worked example) */
+ const reasons=['Price','Schedule','Course suitability','Registration process'];
+ for(let i=0;i<100;i++){
+  let stage,asm;
+  if(i<20){stage=i<6?'Completed':(i<16?'Attending':'Registered & paid');asm='Completed'}
+  else if(i<30){stage='Not enrolled';asm='Completed'}
+  else if(i<40){stage='Placement assessed';asm='Completed'}
+  else if(i<70){stage=i%2?'Course explained':'Inquiry';asm=i%3?'Not started':'Booked'}
+  else{stage='Inquiry';asm='Not started'}
+  const hasNext=!['Completed','Not enrolled','Withdrew'].includes(stage);
+  o.students.push({id:uid(),name:'Sample Learner '+String(i+1).padStart(3,'0'),contact:'',source:ST_SOURCES[i%6],course:i%2?o.courses[0].name:o.courses[1].name,stage,assessment:asm,level:asm==='Completed'?['A1','A2','B1'][i%3]:'',nextAction:hasNext?'Call to confirm next step':'',nextDate:hasNext?d((i%9)-2):'',paid:i<20?800:0,sponsor:'',lost:stage==='Not enrolled'?reasons[i%4]:'',referredBy:i%6===4?'Existing learner':'',consent:i%10<7?'Given':(i%10===9?'Withdrawn':'Not recorded'),consentDate:i%10<7?d(-(i%40)):'',notes:'',created:d(-(i%50))});
+ }
+ o.spend={students:6000,sponsors:3500};
+ o.plan.start=d(-35);o.plan.done={m1a:true,m1b:true,m1c:true,m1d:true,m1e:false,m1f:true,m2a:true,m2b:true,m2c:true,m2d:false};
+ o.ethics={consentRecords:true,senderId:true,optOut:false,permLists:true,sponsorPrivacy:false};
+ return o;
+}
+
+/* ===== Generic form engine ===== */
+const segOpts=()=>[['','— none —']].concat(S.segments.map(s=>[s.id,s.name]));
+const spOpts=()=>[['','— none —']].concat(S.sponsors.map(s=>[s.id,s.org]));
+const spOptsReq=()=>S.sponsors.map(s=>[s.id,s.org]);
+const offerOpts=()=>[['','— none —']].concat(S.offers.map(s=>[s.id,s.name]));
+const agrOpts=()=>[['','— none —']].concat(S.agreements.map(a=>[a.id,agrName(a)]));
+const spName=id=>{const s=S.sponsors.find(x=>x.id===id);return s?s.org:'—'};
+const agrName=a=>spName(a.sponsor)+' · '+(a.type||'').split(' (')[0]+(a.signDate?' · '+a.signDate:'');
+const COSTF=[{k:'cTeach',l:'Cost: teaching time (SAR)',t:'number'},{k:'cMat',l:'Cost: materials (SAR)',t:'number'},{k:'cAdm',l:'Cost: administration (SAR)',t:'number'},{k:'cAsm',l:'Cost: assessment (SAR)',t:'number'},{k:'cFac',l:'Cost: facilities (SAR)',t:'number'},{k:'cOth',l:'Cost: other delivery (SAR)',t:'number'}];
+
+const SCH={
+ courses:{title:'Course',fields:[
+  {k:'name',l:'Course name',req:1,full:1},{k:'audience',l:'Target learners'},{k:'level',l:'Level(s)'},
+  {k:'hours',l:'Total teaching hours',t:'number'},{k:'capacity',l:'Class capacity (max learners)',t:'number'},
+  {k:'schedule',l:'Schedule options',full:1},{k:'fee',l:'Fee per learner (SAR)',t:'number'},
+  {k:'assessment',l:'Assessment method(s)',full:1},{k:'refund',l:'Refund / cancellation policy',t:'textarea',full:1},
+  {k:'certificate',l:'What the completion certificate actually represents',t:'textarea',full:1,hint:'Describe it exactly — no more than it is.'}]},
+ teachers:{title:'Teacher',fields:[{k:'name',l:'Name',req:1},{k:'qual',l:'Qualifications',full:1},{k:'courses',l:'Courses taught',full:1},{k:'notes',l:'Notes',t:'textarea',full:1}]},
+ claims:{title:'Claim',fields:[
+  {k:'claim',l:'Claim made in recruitment or advertising',t:'textarea',req:1,full:1,hint:'Exam preparation, employment benefit, progression, accreditation, results…'},
+  {k:'type',l:'Type',t:'select',o:['Exam preparation','Employment benefit','Progression opportunity','Accreditation / licence','Learning outcome','Other']},
+  {k:'status',l:'Status',t:'select',o:['Substantiated','Pending evidence','Not substantiated — do not use']},
+  {k:'evidence',l:'Evidence on file',t:'textarea',full:1},{k:'by',l:'Verified by (academic team member)'}]},
+ segments:{title:'Market segment',fields:[{k:'name',l:'Segment',req:1,full:1},{k:'status',l:'Status',t:'select',o:['To explore','Conversations held','Demand confirmed','Not viable']},{k:'notes',l:'What you have learned',t:'textarea',full:1}]},
+ discovery:{title:'Discovery conversation',def:()=>({date:todayStr(),willing:'Maybe'}),fields:[
+  {k:'date',l:'Date',t:'date'},{k:'org',l:'Organization / group',req:1},{k:'seg',l:'Segment',t:'select',o:segOpts},
+  {k:'problems',l:'What communication problems occur repeatedly?',t:'textarea',full:1},
+  {k:'who',l:'Who experiences them?',t:'textarea',full:1},
+  {k:'cost',l:'What do those problems cost the organization?',t:'textarea',full:1},
+  {k:'improve',l:'What improvement would justify paying for training?',t:'textarea',full:1},
+  {k:'willing',l:'Willingness to pay (as stated in conversation)',t:'select',o:['Yes','Maybe','No','Not discussed']},
+  {k:'next',l:'Next step agreed',req:1,full:1,hint:'Every substantive conversation ends with a clear next step.'}]},
+ offers:{title:'Offer',def:()=>({participants:15,weeks:8,sessions:2,hrs:1.5,status:'Draft',report:true}),fields:[
+  {k:'name',l:'Offer name',req:1,full:1,ph:'e.g. 8-week English Communication — Hotel Staff'},
+  {k:'seg',l:'Target segment',t:'select',o:segOpts},{k:'sponsor',l:'Sponsor (if known)',t:'select',o:spOpts},
+  {k:'participants',l:'Participants',t:'number'},{k:'weeks',l:'Weeks',t:'number'},{k:'sessions',l:'Sessions per week',t:'number'},{k:'hrs',l:'Hours per session',t:'number'},
+  {k:'price',l:'Total price (SAR)',t:'number'},
+  {k:'status',l:'Status',t:'select',o:['Draft','Sent','Accepted','Declined']},
+  {k:'objectives',l:'Learning objectives',t:'textarea',full:1,hint:'e.g. explain hotel services, give directions, respond to common guest requests.'},
+  {k:'assessment',l:'Assessment process',t:'textarea',full:1},{k:'activities',l:'Activities / methods',t:'textarea',full:1},
+  {k:'report',l:'Report',t:'check',cb:'Includes a final performance report to the sponsor'},
+  {k:'pilot',l:'Pilot',t:'check',cb:'This is a small paid pilot'},
+  {k:'approved',l:'Academic approval',t:'check',cb:'Objectives agreed with the academic team',full:1},
+  ].concat(COSTF).concat([{k:'notes',l:'Notes',t:'textarea',full:1}])},
+ sponsors:{title:'Sponsor',def:()=>({type:'Employer',stage:'Identified',source:'Professional introduction',consent:'Not recorded'}),fields:[
+  {k:'org',l:'Organization / individual',req:1,full:1},{k:'type',l:'Sponsor type',t:'select',o:['Employer','Organization','Individual','Scholarship donor']},
+  {k:'seg',l:'Segment',t:'select',o:segOpts},{k:'source',l:'How you reached them',t:'select',o:SP_SOURCES},{k:'stage',l:'Pipeline stage',t:'select',o:SN},
+  {k:'beneficiary',l:'Who benefits from the training?',hint:'Department / group that will attend.'},
+  {k:'contactName',l:'Main contact'},{k:'contactInfo',l:'Contact details (phone / email)'},
+  {k:'approverName',l:'Who approves payment?',hint:'An enthusiastic supervisor may not control the budget.'},{k:'approverRole',l:'Approver role'},
+  {k:'approverOk',l:'Approver',t:'check',cb:'I have confirmed this person authorizes the expenditure',full:1},
+  {k:'learners',l:'Expected learners',t:'number'},{k:'value',l:'Estimated value (SAR)',t:'number'},
+  {k:'nextStep',l:'Next step',hint:'Needs assessment · proposal · demonstration · decision meeting'},{k:'nextDate',l:'Next-step date',t:'date'},
+  {k:'consent',l:'Marketing consent',t:'select',o:CONSENT},{k:'notes',l:'Notes',t:'textarea',full:1}],
+  after:r=>{if(r.consent==='Given'&&!r.consentDate)r.consentDate=todayStr()}},
+ interactions:{title:'Interaction',def:()=>({date:todayStr(),type:'Meeting'}),fields:[
+  {k:'ref',l:'Sponsor',t:'select',o:spOptsReq,req:1,full:1},{k:'date',l:'Date',t:'date'},
+  {k:'type',l:'Type',t:'select',o:['Meeting','Call','Email/WhatsApp','Demonstration','Needs assessment','Proposal presentation','Decision meeting','Site visit','Other']},
+  {k:'summary',l:'What was discussed',t:'textarea',req:1,full:1},
+  {k:'nextStep',l:'Clear next step',req:1,full:1,hint:'Required — a friendly talk becomes commercially useful when both sides know what happens next.'},
+  {k:'nextDate',l:'Next-step date',t:'date',req:1}],
+  after:r=>{const s=S.sponsors.find(x=>x.id===r.ref);if(s){s.nextStep=r.nextStep;s.nextDate=r.nextDate}}},
+ students:{title:'Student inquiry',def:()=>({stage:'Inquiry',assessment:'Not started',source:'WhatsApp inquiry',consent:'Not recorded',nextDate:addDays(todayStr(),1)}),fields:[
+  {k:'name',l:'Name',req:1},{k:'contact',l:'Phone / WhatsApp / email'},{k:'source',l:'Inquiry source',t:'select',o:ST_SOURCES},
+  {k:'course',l:'Course of interest'},{k:'stage',l:'Stage',t:'select',o:STU},{k:'assessment',l:'Placement assessment',t:'select',o:['Not started','Booked','Completed']},
+  {k:'level',l:'Placement level'},{k:'nextAction',l:'Next action'},{k:'nextDate',l:'Next-action date',t:'date'},
+  {k:'paid',l:'Amount paid (SAR)',t:'number'},{k:'sponsor',l:'Sponsored by',t:'select',o:spOpts},
+  {k:'lost',l:'If not enrolled — main reason',t:'select',o:['','Price','Schedule','Course suitability','Registration process','Chose another provider','No response','Other']},
+  {k:'referredBy',l:'Referred by'},{k:'consent',l:'Marketing consent',t:'select',o:CONSENT},{k:'notes',l:'Notes',t:'textarea',full:1}],
+  validate:v=>v.stage==='Not enrolled'&&!v.lost?'Please record the main reason this person did not enrol — it tells you what to fix.':null,
+  after:r=>{if(r.consent==='Given'&&!r.consentDate)r.consentDate=todayStr()}},
+ agreements:{title:'Agreement',def:()=>({type:'Paid training (employer/organization)',status:'Draft',renewal:'Not due'}),fields:[
+  {k:'sponsor',l:'Sponsor',t:'select',o:spOptsReq,req:1,full:1},
+  {k:'type',l:'Agreement type',t:'select',o:['Paid training (employer/organization)','Scholarship (donor-funded)','Individual sponsor']},
+  {k:'status',l:'Status',t:'select',o:['Draft','Sent','Signed','Completed','Cancelled']},{k:'offer',l:'Based on offer',t:'select',o:offerOpts},
+  {k:'signDate',l:'Signing date',t:'date'},{k:'learners',l:'Number of learners',t:'number'},{k:'hours',l:'Teaching hours',t:'number'},
+  {k:'value',l:'Contract value (SAR)',t:'number'},{k:'collected',l:'Revenue collected (SAR)',t:'number'},{k:'refunded',l:'Refunded / cancelled (SAR)',t:'number'},
+  {k:'directCost',l:'Direct delivery cost (SAR)',t:'number'},
+  {k:'payments',l:'Payment dates and amounts',t:'textarea',full:1},{k:'cancel',l:'Cancellation terms',t:'textarea',full:1},
+  {k:'reporting',l:'Reporting arrangements',t:'textarea',full:1},{k:'instResp',l:'Responsibilities of the institute',t:'textarea',full:1},
+  {k:'spResp',l:'Responsibilities of the sponsor',t:'textarea',full:1},
+  {k:'eligibility',l:'Scholarship: eligibility criteria',t:'textarea',full:1},{k:'selection',l:'Scholarship: selection procedure',t:'textarea',full:1},
+  {k:'renewal',l:'Renewal outcome',t:'select',o:['Not due','Pending','Renewed','Not renewed']},{k:'notes',l:'Notes',t:'textarea',full:1}],
+  after:r=>{const of=S.offers.find(x=>x.id===r.offer);if(of){if(!r.learners)r.learners=of.participants;if(!r.hours)r.hours=num(of.weeks)*num(of.sessions)*num(of.hrs);if(!r.value)r.value=of.price;if(!r.directCost)r.directCost=offerCost(of)}}},
+ cohorts:{title:'Delivery cohort',def:()=>({}),fields:[
+  {k:'name',l:'Cohort name',req:1,full:1},{k:'sponsor',l:'Sponsor',t:'select',o:spOpts},{k:'agreement',l:'Agreement',t:'select',o:agrOpts},
+  {k:'start',l:'Start date',t:'date'},{k:'end',l:'End date',t:'date'},{k:'enrolled',l:'Learners enrolled',t:'number'},
+  {k:'completed',l:'Learners completed (fill at the end)',t:'number'},{k:'attendance',l:'Average attendance (%)',t:'number'},
+  {k:'sat',l:'Sponsor satisfaction (1–5)',t:'number'},
+  {k:'issues',l:'Problems spotted early (attendance, schedule, placement)',t:'textarea',full:1},
+  {k:'findings',l:'Assessment findings (aggregate)',t:'textarea',full:1},{k:'next',l:'Recommended next steps',t:'textarea',full:1},
+  {k:'limits',l:'Honest limitations to state in the report',t:'textarea',full:1},
+  {k:'reportSent',l:'Sponsor report sent on',t:'date'},{k:'renewalStarted',l:'Renewal discussion started on',t:'date'},
+  {k:'newGroup',l:'Another group',t:'check',cb:'Sponsor has another group needing training'}]}
+};
+function offerCost(o){return num(o.cTeach)+num(o.cMat)+num(o.cAdm)+num(o.cAsm)+num(o.cFac)+num(o.cOth)}
+
+function fieldHTML(f,v){
+ const id='f_'+f.k,val=v==null?'':v,t=f.t||'text';let inp;
+ if(t==='select'){const opts=typeof f.o==='function'?f.o():f.o;inp=`<select id="${id}">`+opts.map(o=>{const[a,b]=Array.isArray(o)?o:[o,o||'— none —'];return `<option value="${esc(a)}"${String(a)===String(val)?' selected':''}>${esc(b)}</option>`}).join('')+'</select>'}
+ else if(t==='textarea')inp=`<textarea id="${id}" rows="3">${esc(val)}</textarea>`;
+ else if(t==='check')inp=`<label class="chk"><input type="checkbox" id="${id}"${val?' checked':''}> ${esc(f.cb||'Yes')}</label>`;
+ else inp=`<input id="${id}" type="${t}" value="${esc(val)}"${t==='number'?' step="any"':''}${f.ph?` placeholder="${esc(f.ph)}"`:''}>`;
+ return `<div class="fld${f.full?' full':''}">${t==='check'&&!f.l?'':`<label for="${id}">${esc(f.l)}${f.req?' *':''}</label>`}${inp}${f.hint?`<small>${esc(f.hint)}</small>`:''}</div>`;
+}
+function openForm(coll,id,preset){
+ const sc=SCH[coll];let rec=id?S[coll].find(x=>x.id===id):Object.assign({},sc.def?sc.def():{},preset||{});
+ if(!rec)return;
+ const m=$('#modal');
+ m.innerHTML=`<div class="mbox"><h3>${id?'Edit':'Add'} — ${esc(sc.title)}</h3><div class="formgrid">${sc.fields.map(f=>fieldHTML(f,rec[f.k])).join('')}</div><div class="err" id="ferr"></div>
+ <div class="mfoot"><div>${id?`<button class="btn red sm" onclick="A.del('${coll}','${id}')">Delete</button>`:''}</div><div><button class="btn ghost" onclick="A.closeForm()">Cancel</button> <button class="btn" onclick="A.saveForm('${coll}','${id||''}')">Save</button></div></div></div>`;
+ m.hidden=false;
+ const first=m.querySelector('input,select,textarea');if(first&&!id)first.focus();
+}
+/* ===== Metrics & alerts ===== */
+const MEET=['Meeting','Demonstration','Needs assessment','Decision meeting','Site visit','Proposal presentation'];
+function metrics(){
+ const st=S.students,inq=st.length;
+ const assessed=st.filter(s=>s.assessment==='Completed').length;
+ const enrolled=st.filter(s=>{const i=STU.indexOf(s.stage);return i>=4&&i<=7}).length;
+ const completed=st.filter(s=>s.stage==='Completed').length,withdrew=st.filter(s=>s.stage==='Withdrew').length;
+ const open=S.sponsors.filter(s=>SN.indexOf(s.stage)<=5);
+ const signed=S.agreements.filter(a=>a.status==='Signed'||a.status==='Completed');
+ const withCost=signed.filter(a=>num(a.directCost)>0&&num(a.value)>0);
+ const cv=sum(withCost,a=>a.value),cc=sum(withCost,a=>a.directCost);
+ const sigSp=new Set(signed.map(a=>a.sponsor)).size;
+ const ren=S.agreements.filter(a=>a.renewal==='Renewed').length,nren=S.agreements.filter(a=>a.renewal==='Not renewed').length;
+ const refs=st.filter(s=>s.source==='Referral').length+S.sponsors.filter(s=>s.source==='Referral').length;
+ const meetings=S.interactions.filter(i=>MEET.includes(i.type)).length+S.discovery.length;
+ const proposals=S.offers.filter(o=>o.status!=='Draft').length;
+ const att=S.cohorts.filter(c=>c.attendance!==''&&c.attendance!=null);
+ const sats=S.cohorts.filter(c=>num(c.sat)>0);
+ return {inq,assessed,enrolled,completed,withdrew,
+  asmRate:pct(assessed,inq),convInq:pct(enrolled,inq),convAsm:pct(enrolled,assessed),completion:pct(completed,completed+withdrew),
+  pipeline:sum(open,s=>s.value),openCount:open.length,won:sum(signed,a=>a.value),collected:sum(signed,a=>num(a.collected)-num(a.refunded)),
+  contrib:cv-cc,margin:cv>0?Math.round((cv-cc)/cv*1000)/10:null,signedSp:sigSp,
+  cacS:enrolled>0?num(S.spend.students)/enrolled:null,cacSp:sigSp>0?num(S.spend.sponsors)/sigSp:null,
+  renewal:pct(ren,ren+nren),refs,refRate:pct(refs,inq+S.sponsors.length),meetings,proposals,
+  attAvg:att.length?sum(att,c=>c.attendance)/att.length:null,satAvg:sats.length?sum(sats,c=>c.sat)/sats.length:null};
+}
+function agrChecks(a){
+ const c=[['Number of learners',num(a.learners)>0],['Teaching hours',num(a.hours)>0],['Payment dates',!!(a.payments||'').trim()],['Cancellation terms',!!(a.cancel||'').trim()],['Reporting arrangements',!!(a.reporting||'').trim()],['Responsibilities of each party',!!(a.instResp||'').trim()&&!!(a.spResp||'').trim()]];
+ if((a.type||'').startsWith('Scholarship'))c.push(['Eligibility criteria',!!(a.eligibility||'').trim()],['Selection procedure',!!(a.selection||'').trim()]);
+ return c;
+}
+function readiness(){
+ const full=c=>c.name&&num(c.hours)>0&&num(c.capacity)>0&&c.schedule&&num(c.fee)>0&&c.assessment&&c.refund;
+ return [
+  ['Licence / authorization marked Verified',S.inst.lic==='Verified'],
+  ['Licence reference and verification date recorded',!!(S.inst.licRef&&S.inst.licDate)],
+  ['At least one course fully specified (hours, capacity, schedule, fee, assessment, refund policy)',S.courses.some(full)],
+  ['Every listed course is fully specified',S.courses.length>0&&S.courses.every(full)],
+  ['Teacher qualifications recorded for every teacher',S.teachers.length>0&&S.teachers.every(t=>t.qual)],
+  ['Certificate wording describes what it actually represents',!!S.inst.certNote||S.courses.some(x=>x.certificate)],
+  ['Claims register started and every claim substantiated',S.claims.length>0&&S.claims.every(x=>x.status==='Substantiated')]
+ ];
+}
+function cohortsOf(aid){return S.cohorts.filter(c=>c.agreement===aid)}
+function bonusFor(a){
+ const net=Math.max(0,num(a.collected)-num(a.refunded));
+ const cs=cohortsOf(a.id),enr=sum(cs,c=>c.enrolled),done=cs.filter(c=>c.completed!=='').reduce((t,c)=>t+num(c.completed),0);
+ const finished=cs.length>0&&cs.every(c=>c.completed!=='');
+ const comp=finished&&enr>0?done/enr*100:null;
+ const sc=cs.filter(c=>num(c.sat)>0);const sat=sc.length?sum(sc,c=>c.sat)/sc.length:null;
+ if(comp==null)return {net,comp,sat,factor:0,bonus:0,pending:true};
+ const mc=comp>=S.comp.minCompletion,ms=sat!=null&&sat>=S.comp.minSat;
+ const factor=mc&&ms?1:(mc||ms)?S.comp.partial/100:0;
+ return {net,comp,sat,factor,bonus:net*S.comp.rate/100*factor,pending:false};
+}
+function alerts(){
+ const a=[],t=todayStr();const add=(lv,txt,go)=>a.push({lv,txt,go});
+ if(S.inst.lic!=='Verified')add('hi','Licence / authorization is not marked Verified. Confirm your current authorization before promoting the institute.','ready');
+ const pend=S.claims.filter(c=>c.status!=='Substantiated');
+ if(pend.length)add('hi',`${pend.length} recruitment claim(s) lack evidence — keep them out of proposals and advertising.`,'ready');
+ const risky=S.offers.filter(o=>RISKY.test([o.name,o.objectives,o.assessment,o.activities,o.notes].join(' ')));
+ if(risky.length)add('hi',`${risky.length} offer(s) use guarantee, fluency-promise or visa/immigration wording. Rewrite before anything reaches a sponsor.`,'offers');
+ const od=S.sponsors.filter(s=>SN.indexOf(s.stage)<=8&&s.nextDate&&s.nextDate<t);
+ if(od.length)add('med',`${od.length} sponsor next step(s) are overdue: ${od.slice(0,3).map(s=>s.org).join(', ')}${od.length>3?'…':''}`,'sponsors');
+ const nn=S.sponsors.filter(s=>SN.indexOf(s.stage)<=8&&!s.nextStep);
+ if(nn.length)add('med',`${nn.length} active sponsor(s) have no next step recorded: ${nn.slice(0,3).map(s=>s.org).join(', ')}`,'sponsors');
+ const ap=S.sponsors.filter(s=>{const i=SN.indexOf(s.stage);return i>=3&&i<=5&&!s.approverOk});
+ if(ap.length)add('med',`${ap.length} sponsor(s) at proposal stage or later have no confirmed payment approver: ${ap.slice(0,3).map(s=>s.org).join(', ')}`,'sponsors');
+ const so=S.students.filter(s=>!['Completed','Withdrew','Not enrolled','Attending','Registered & paid'].includes(s.stage)&&s.nextDate&&s.nextDate<t);
+ if(so.length)add('med',`${so.length} student follow-up(s) are overdue.`,'students');
+ S.cohorts.forEach(c=>{
+  if(c.end&&!c.renewalStarted){const dd=daysBetween(t,c.end);if(dd<=30)add('med',`Renewal discussion not started for “${c.name}” — course ${dd>=0?'ends in '+dd+' day(s)':'has ended'}.`,'delivery')}
+  if(c.attendance!==''&&num(c.attendance)<num(S.targets.attendance)&&!c.completed&&c.completed!==0)add('med',`Attendance on “${c.name}” is ${c.attendance}% (floor ${S.targets.attendance}%). Check scheduling and placement.`,'delivery');
+ });
+ const ag=S.agreements.filter(x=>['Draft','Sent','Signed'].includes(x.status)&&agrChecks(x).some(c=>!c[1]));
+ if(ag.length)add('hi',`${ag.length} agreement(s) are missing required clauses (learners, hours, payments, cancellation, reporting, responsibilities).`,'agree');
+ const nc=S.students.filter(s=>s.consent!=='Given').length+S.sponsors.filter(s=>s.consent!=='Given'&&s.stage!=='Lost').length;
+ if(nc)add('low',`${nc} contact(s) have no recorded marketing consent — exclude them from direct marketing.`,'consent');
+ return a;
+}
+function nextActions(){
+ const t=todayStr(),lim=addDays(t,7),r=[];
+ S.sponsors.forEach(s=>{if(SN.indexOf(s.stage)<=8&&s.nextDate&&s.nextDate<=lim)r.push({d:s.nextDate,kind:'Sponsor',who:s.org,what:s.nextStep||'(no next step)',go:()=>`A.edit('sponsors','${s.id}')`})});
+ S.students.forEach(s=>{if(['Inquiry','Course explained','Placement assessed','Timetable confirmed'].includes(s.stage)&&s.nextDate&&s.nextDate<=lim)r.push({d:s.nextDate,kind:'Student',who:s.name,what:s.nextAction||'(no next action)',go:()=>`A.edit('students','${s.id}')`})});
+ return r.sort((a,b)=>a.d<b.d?-1:1);
+}
+
+/* ===== View helpers ===== */
+const tag=(t,c)=>`<span class="tag ${c||''}">${esc(t)}</span>`;
+const tile=(l,v,s)=>`<div class="tile"><div class="l">${esc(l)}</div><div class="v">${v}</div><div class="s">${s||''}</div></div>`;
+function tbl(cols,rows,empty){
+ if(!rows.length)return `<p class="mut">${empty||'Nothing here yet.'}</p>`;
+ return `<div class="scroll"><table class="t"><thead><tr>${cols.map(c=>`<th>${c[0]}</th>`).join('')}</tr></thead><tbody>${rows.map(r=>`<tr>${cols.map(c=>`<td>${c[1](r)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+}
+function bnd(path,label,o){
+ o=o||{};const v=path.split('.').reduce((x,k)=>x&&x[k],S),t=o.t||'text';let el;
+ if(t==='select')el=`<select data-bind="${path}" onchange="A.bind(this)">${o.o.map(x=>`<option${x===v?' selected':''}>${esc(x)}</option>`).join('')}</select>`;
+ else if(t==='textarea')el=`<textarea rows="${o.rows||3}" data-bind="${path}" onchange="A.bind(this)">${esc(v)}</textarea>`;
+ else if(t==='check')el=`<label class="chk"><input type="checkbox" data-bind="${path}"${v?' checked':''} onchange="A.bind(this)"> ${esc(o.cb||'')}</label>`;
+ else el=`<input type="${t}" data-bind="${path}" value="${esc(v)}" ${o.live?`data-live="${o.live}" oninput="A.bind(this)"`:'onchange="A.bind(this)"'}${t==='number'?' step="any"':''}>`;
+ return `<div class="fld${o.full?' full':''}"><label>${esc(label)}</label>${el}${o.hint?`<small>${esc(o.hint)}</small>`:''}</div>`;
+}
+const head=(t,sub,btns)=>`<div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:flex-end"><div><h2>${t}</h2><p class="mut">${sub||''}</p></div><div class="toolbar">${btns||''}</div></div>`;
+const phaseTag=p=>({creed:tag('Creed','gold'),service:tag('Service','ok'),commerce:tag('Commerce','warn'),lost:tag('Closed')}[p]||'');
+const odTag=d=>d?tag(d,d<todayStr()?'bad':''):'';
+const consentTag=c=>c==='Given'?tag('Consent given','ok'):c==='Withdrawn'?tag('Withdrawn','bad'):tag('Not recorded','warn');
+
+/* ===== HOME ===== */
+function vHome(){
+ const m=metrics(),al=alerts(),act=nextActions(),rd=readiness(),rdOk=rd.filter(x=>x[1]).length;
+ const max=Math.max(1,m.inq);
+ return `${S.sample?`<div class="banner"><b>Sample data is loaded</b> so you can see how every screen works (the funnel mirrors the guide’s example: 100 inquiries → 40 assessments → 20 paid enrollments).<button class="btn sm red" onclick="A.clearSample()">Clear sample data</button></div>`:''}
+ <h2>Welcome${S.inst.manager?', '+esc(S.inst.manager):''}</h2>
+ <p class="mut">${esc(S.inst.name||'Your institute')} · ${new Date().toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long',year:'numeric'})}</p>
+ <div class="phase3">
+  <div class="phase a"><h3>1 · Creed — Trustworthy Intention</h3><p>Know exactly what the institute can deliver, verify its authorization, promise only what is true, and respect consent.</p><div class="big">${rdOk}/${rd.length} readiness checks passed</div><button class="btn sm gold" onclick="A.go('ready')">Open readiness</button></div>
+  <div class="phase b"><h3>2 · Service — Useful Offers</h3><p>Turn courses into clear offers and manage sponsors, students, delivery and renewals.</p><div class="big">${m.openCount} open sponsors · ${m.inq} student inquiries</div><button class="btn sm gold" onclick="A.go('sponsors')">Open Sponsor CRM</button></div>
+  <div class="phase c"><h3>3 · Commerce — Responsible Management</h3><p>Protect contribution margin, write complete agreements, reward healthy growth, measure outcomes.</p><div class="big">${fmt(m.collected)} collected · margin ${pctS(m.margin)}</div><button class="btn sm gold" onclick="A.go('kpi')">Open KPIs</button></div>
+ </div>
+ <div class="tiles">
+  ${tile('Open sponsor pipeline',fmt(m.pipeline),m.openCount+' opportunities before signing')}
+  ${tile('Signed agreement value',fmt(m.won),m.signedSp+' sponsor(s)')}
+  ${tile('Revenue collected (net)',fmt(m.collected),'after refunds / cancellations')}
+  ${tile('Inquiry → enrollment',pctS(m.convInq),m.enrolled+' paid of '+m.inq+' inquiries')}
+  ${tile('Assessment → enrollment',pctS(m.convAsm),m.enrolled+' of '+m.assessed+' assessed')}
+  ${tile('Sponsor renewal rate',pctS(m.renewal),'renewed ÷ decided')}
+ </div>
+ <div class="grid2">
+  <div class="card"><h3>Student funnel</h3>
+   <div class="frow"><span class="lb">Inquiries</span><div class="bar"><i style="width:100%"></i></div><span class="n">${m.inq}</span></div>
+   <div class="frow"><span class="lb">Assessed</span><div class="bar"><i style="width:${m.assessed/max*100}%"></i></div><span class="n">${m.assessed} (${pctS(m.asmRate)})</span></div>
+   <div class="frow"><span class="lb">Paid enrollment</span><div class="bar gold"><i style="width:${m.enrolled/max*100}%"></i></div><span class="n">${m.enrolled} (${pctS(m.convInq)})</span></div>
+   <p class="sm mut">An inquiry is only the beginning. Track every step to paid attendance.</p></div>
+  <div class="card"><h3>Today & this week — next actions</h3>
+   ${act.length?`<div class="scroll" style="max-height:260px">${act.slice(0,14).map(x=>`<div class="rowline"><span>${tag(x.kind,x.kind==='Sponsor'?'gold':'')} <a href="javascript:void(0)" onclick="${x.go()}">${esc(x.who)}</a><br><span class="sm mut">${esc(x.what)}</span></span>${odTag(x.d)}</div>`).join('')}</div>`:'<p class="mut">No actions due in the next 7 days. Every conversation should end with a next step — log one.</p>'}
+  </div>
+ </div>
+ <div class="card gold"><h3>Needs your attention (${al.length})</h3>
+  ${al.length?al.map(x=>`<div class="alert ${x.lv}"><span>${esc(x.txt)}</span><button class="btn sm ghost" onclick="A.go('${x.go}')">Go</button></div>`).join(''):'<p class="mut">All clear.</p>'}
+ </div>`;
+}
+
+/* ===== READINESS ===== */
+function vReady(){
+ const rd=readiness(),ok=rd.filter(x=>x[1]).length;
+ const full=c=>c.name&&num(c.hours)>0&&num(c.capacity)>0&&c.schedule&&num(c.fee)>0&&c.assessment&&c.refund;
+ return head('Institute Readiness','Understand the institute before promoting it. Every promise made in recruitment must be supported by what the institute can actually deliver.')+
+ `<div class="card gold"><h3>Promise Gate: ${ok}/${rd.length}</h3><div class="bar"><i style="width:${ok/rd.length*100}%"></i></div>
+  <ul class="chk" style="margin-top:8px">${rd.map(x=>`<li><span class="${x[1]?'ok-i':'no-i'}">${x[1]?'✔':'✖'}</span><span>${esc(x[0])}</span></li>`).join('')}</ul></div>
+ <div class="card"><h3>Licence & authorization</h3>
+  <p class="sm mut">The Ministry of Education lists an operational licensing service that includes language institutes, and TVTC identifies English teaching as falling under Ministry of Education supervision. Verify your institute’s <b>current</b> authorization directly with the relevant authority and describe licences and certificates accurately in proposals and advertising.</p>
+  <div class="formgrid">${bnd('inst.name','Institute name')}${bnd('inst.manager','Your title / name')}
+  ${bnd('inst.lic','Authorization status',{t:'select',o:['Not verified','Pending','Verified']})}${bnd('inst.licRef','Licence / reference number')}${bnd('inst.licDate','Date you last verified',{t:'date'})}
+  ${bnd('inst.licNote','How the licence will be described in proposals (exact wording)',{t:'textarea',full:1})}
+  ${bnd('inst.certNote','What the course completion certificate actually represents',{t:'textarea',full:1,hint:'e.g. confirms attendance and completion; not an external examination result.'})}</div></div>
+ <div class="card"><div class="toolbar"><h3 style="margin:0">Courses (what can really be delivered)</h3><button class="btn sm" onclick="A.add('courses')">+ Add course</button></div>
+  ${tbl([['Course',c=>`<b>${esc(c.name)}</b><br><span class="sm mut">${esc(c.audience||'')}</span>`],['Hours',c=>c.hours||'—'],['Capacity',c=>c.capacity||'—'],['Fee',c=>c.fee?fmt(c.fee):'—'],['Schedule',c=>esc(c.schedule||'—')],['Assessment',c=>esc(c.assessment||'—')],['Refund policy',c=>c.refund?'✔':tag('missing','bad')],['Complete?',c=>full(c)?tag('Yes','ok'):tag('Gaps','warn')],['',c=>`<button class="btn sm ghost" onclick="A.edit('courses','${c.id}')">Edit</button>`]],S.courses,'Add every course with hours, capacity, schedule, fee, assessment method and refund policy.')}</div>
+ <div class="card"><div class="toolbar"><h3 style="margin:0">Teacher qualifications</h3><button class="btn sm" onclick="A.add('teachers')">+ Add teacher</button></div>
+  ${tbl([['Name',t=>`<b>${esc(t.name)}</b>`],['Qualifications',t=>t.qual?esc(t.qual):tag('missing','bad')],['Courses',t=>esc(t.courses||'')],['',t=>`<button class="btn sm ghost" onclick="A.edit('teachers','${t.id}')">Edit</button>`]],S.teachers)}</div>
+ <div class="card"><div class="toolbar"><h3 style="margin:0">Claims register</h3><button class="btn sm" onclick="A.add('claims')">+ Add claim</button></div>
+  <p class="sm mut">Make claims about exam preparation, employment benefits or progression only when they can be substantiated. Never guarantee fluency within a fixed period, and never promise immigration sponsorship as part of educational sponsorship.</p>
+  ${tbl([['Claim',c=>esc(c.claim)],['Type',c=>esc(c.type||'')],['Status',c=>tag(c.status,c.status==='Substantiated'?'ok':c.status.startsWith('Not')?'bad':'warn')],['Evidence',c=>esc(c.evidence||'—')],['',c=>`<button class="btn sm ghost" onclick="A.edit('claims','${c.id}')">Edit</button>`]],S.claims,'List every claim you make in recruitment so each one can be checked.')}</div>`;
+}
+
+/* ===== CONSENT & ETHICS ===== */
+function vConsent(){
+ const people=S.students.map(s=>({c:'students',id:s.id,kind:'Student',name:s.name,info:s.contact,cs:s.consent,d:s.consentDate})).concat(S.sponsors.filter(s=>s.stage!=='Lost').map(s=>({c:'sponsors',id:s.id,kind:'Sponsor',name:s.org+(s.contactName?' — '+s.contactName:''),info:s.contactInfo,cs:s.consent,d:s.consentDate})));
+ const given=people.filter(p=>p.cs==='Given').length,wd=people.filter(p=>p.cs==='Withdrawn').length,nr=people.length-given-wd;
+ const order={'Withdrawn':0,'Not recorded':1,'Given':2};
+ const rows=people.slice().sort((a,b)=>order[a.cs]-order[b.cs]).slice(0,200);
+ const E=S.ethics,items=[['consentRecords','We keep a consent record (who, when, how) for every contact we market to'],['senderId','Every marketing message clearly identifies the institute as the sender'],['optOut','Every marketing message gives an easy way to stop receiving it, and opt-outs are honoured promptly'],['permLists','Contact lists are permission-based — nobody is added without consent'],['sponsorPrivacy','Sponsor reports share learner information only within agreed privacy arrangements']];
+ const nm=S.inst.name||'[Institute name]';
+ return head('Consent & Ethics','Saudi data protection rules require consent for direct marketing, clear identification of the sender, and an easy way to stop receiving marketing messages. Build permission-based lists.',`<button class="btn sm gold" onclick="A.csv('eligible')">⬇ Export consented contacts (CSV)</button>`)+
+ `<div class="tiles">${tile('Consent given',given,'may receive marketing')}${tile('Not recorded',nr,'do NOT market to them')}${tile('Withdrawn',wd,'never market to them')}</div>
+ <div class="grid2"><div class="card"><h3>Compliance checklist</h3><ul class="chk">${items.map(([k,t])=>`<li><input type="checkbox" style="width:auto;margin-top:4px" ${E[k]?'checked':''} onchange="A.eth('${k}',this.checked)"><span>${esc(t)}</span></li>`).join('')}</ul>
+  <p class="sm mut">This app supports good practice; it is not legal advice. Confirm current obligations with a qualified adviser.</p></div>
+ <div class="card"><h3>Honest-promise rules</h3><ul class="chk">
+  <li><span class="no-i">✖</span><span>Never guarantee fluency within an arbitrary period — results depend on attendance, starting ability and practice outside class.</span></li>
+  <li><span class="no-i">✖</span><span>Never promise immigration sponsorship, visas or residency as part of an educational sponsorship.</span></li>
+  <li><span class="no-i">✖</span><span>Never make exam, employment or progression claims you cannot substantiate.</span></li>
+  <li><span class="ok-i">✔</span><span>Describe licences and certificates exactly as they are.</span></li>
+  <li><span class="ok-i">✔</span><span>Report modest, well-supported improvement rather than impressive claims without evidence.</span></li></ul></div></div>
+ <div class="card"><h3>Marketing message footer (copy and use)</h3>
+  <div class="formgrid"><div class="fld"><label>English</label><textarea rows="4" readonly onclick="this.select()">This message is sent by ${esc(nm)}. You are receiving it because you agreed to receive our course updates. To stop receiving marketing messages, reply STOP at any time.</textarea></div>
+  <div class="fld"><label>العربية</label><textarea rows="4" dir="rtl" readonly onclick="this.select()" style="font-family:Amiri,serif;font-size:17px">أُرسلت هذه الرسالة من ${esc(nm)}. تتلقى هذه الرسالة لأنك وافقت على استلام تحديثات دوراتنا. للتوقف عن تلقي الرسائل التسويقية، أرسل كلمة «إيقاف» في أي وقت.</textarea></div></div></div>
+ <div class="card"><h3>Consent register ${people.length>200?'(first 200 shown; withdrawn and unrecorded first)':''}</h3>
+ ${tbl([['Type',p=>tag(p.kind,p.kind==='Sponsor'?'gold':'')],['Name',p=>esc(p.name)],['Contact',p=>esc(p.info||'—')],['Consent',p=>`<select style="width:auto" onchange="A.setC('${p.c}','${p.id}',this.value)">${CONSENT.map(o=>`<option${o===p.cs?' selected':''}>${o}</option>`).join('')}</select>`],['Last updated',p=>esc(p.d||'—')]],rows,'Add students or sponsors to build the register.')}</div>`;
+}
+
+/* ===== MARKET & NEEDS ===== */
+function vMarket(){
+ const cnt=id=>S.discovery.filter(d=>d.seg===id).length,yes=id=>S.discovery.filter(d=>d.seg===id&&d.willing==='Yes').length;
+ return head('Market & Needs','Start with a problem language education can solve. These are potential markets to investigate — willingness to buy is established through conversations, not assumed.',`<button class="btn sm" onclick="A.add('segments')">+ Segment</button> <button class="btn sm gold" onclick="A.add('discovery')">+ Log discovery conversation</button>`)+
+ `<div class="card"><h3>Segments</h3>${tbl([['Segment',s=>`<b>${esc(s.name)}</b>`],['Status',s=>tag(s.status,s.status==='Demand confirmed'?'ok':s.status==='Not viable'?'bad':s.status==='Conversations held'?'gold':'')],['Conversations',s=>cnt(s.id)],['Said they would pay',s=>yes(s.id)],['What you have learned',s=>esc(s.notes||'—')],['',s=>`<button class="btn sm ghost" onclick="A.edit('segments','${s.id}')">Edit</button>`]],S.segments)}</div>
+ <div class="card gold"><h3>The four discovery questions</h3><ol><li>What communication problems occur repeatedly?</li><li>Who experiences them?</li><li>What do those problems cost the organization?</li><li>What improvement would justify paying for training?</li></ol>
+ <p class="sm mut">Spend more time understanding the organization than presenting a sales speech. End every conversation with a clear next step: needs assessment, proposal, demonstration, or decision meeting.</p></div>
+ <div class="card"><h3>Discovery log</h3>${tbl([['Date',d=>esc(d.date)],['Organization',d=>`<b>${esc(d.org)}</b><br><span class="sm mut">${esc((S.segments.find(s=>s.id===d.seg)||{}).name||'')}</span>`],['Problem',d=>esc(d.problems||'—')],['Who',d=>esc(d.who||'—')],['Cost',d=>esc(d.cost||'—')],['Worth paying for',d=>esc(d.improve||'—')],['Willing to pay',d=>tag(d.willing,d.willing==='Yes'?'ok':d.willing==='No'?'bad':'warn')],['Next step',d=>esc(d.next)],['',d=>`<button class="btn sm ghost" onclick="A.edit('discovery','${d.id}')">Edit</button> <button class="btn sm ghost" onclick="A.toLead('${d.id}')">→ Sponsor lead</button>`]],S.discovery.slice().sort((a,b)=>a.date<b.date?1:-1),'Log your first conversation.')}</div>`;
+}
+
+/* ===== OFFERS ===== */
+function vOffers(){
+ return head('Offer Builder','Turn courses into clear business offers: defined participants, timetable, learning objectives, assessment process and total price. Agree objectives with the academic team.',`<button class="btn" onclick="A.add('offers')">+ New offer</button>`)+
+ (S.offers.length?S.offers.map(o=>{
+  const hrs=num(o.weeks)*num(o.sessions)*num(o.hrs),cost=offerCost(o),contrib=num(o.price)-cost,mg=num(o.price)>0?contrib/num(o.price)*100:null;
+  const risk=RISKY.test([o.name,o.objectives,o.assessment,o.activities,o.notes].join(' '));
+  return `<div class="card ${risk?'':'gold'}" ${risk?'style="border-left:5px solid var(--red)"':''}>
+  <div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><div><h3 style="margin:0">${esc(o.name)}</h3><p class="mut sm">${esc((S.segments.find(s=>s.id===o.seg)||{}).name||'No segment')} · ${o.sponsor?esc(spName(o.sponsor)):'No sponsor yet'} · ${tag(o.status)} ${o.pilot?tag('Pilot','gold'):''} ${o.approved?tag('Academic approved','ok'):tag('Awaiting academic approval','warn')}</p></div>
+  <div class="toolbar"><button class="btn sm ghost" onclick="A.edit('offers','${o.id}')">Edit</button><button class="btn sm ghost" onclick="A.calcFrom('${o.id}')">Check profitability</button><button class="btn sm gold" onclick="A.print('offer','${o.id}')">🖨 Proposal PDF</button></div></div>
+  ${risk?`<div class="alert hi"><span><b>Promise check failed.</b> This text uses guarantee / fluency-promise / visa or immigration wording. Recruitment staff must never guarantee fluency in an arbitrary period or promise immigration sponsorship. Rewrite before sending.</span></div>`:''}
+  <div class="tiles"><div class="tile"><div class="l">Participants</div><div class="v">${num(o.participants)}</div></div><div class="tile"><div class="l">Schedule</div><div class="v">${num(o.weeks)} wks × ${num(o.sessions)}</div><div class="s">${hrs} teaching hours</div></div><div class="tile"><div class="l">Total price</div><div class="v">${fmt(o.price)}</div><div class="s">${num(o.participants)?fmt(num(o.price)/num(o.participants))+' per learner':''}</div></div><div class="tile"><div class="l">Contribution</div><div class="v">${cost?fmt(contrib):'—'}</div><div class="s">${cost&&mg!=null?mg.toFixed(1)+'% of price':'enter delivery costs'}</div></div></div>
+  <div class="grid2"><div><b>Objectives</b><p>${nl2(o.objectives||'—')}</p></div><div><b>Assessment & activities</b><p>${nl2([o.assessment,o.activities].filter(Boolean).join('\n')||'—')}</p></div></div></div>`}).join(''):'<div class="card"><p class="mut">No offers yet. Example from the guide: an eight-week English communication course for fifteen hotel employees, two sessions each week, an initial assessment, workplace role-play and a final performance report.</p></div>')+
+ `<div class="card"><h4>Why start with a small paid pilot?</h4><p class="sm">It gives the sponsor evidence of teaching quality while letting the institute test scheduling, learner participation and delivery costs before accepting a larger commitment.</p></div>`;
+}
+
+/* ===== SPONSORS ===== */
+function spCard(s){
+ const od=s.nextDate&&s.nextDate<todayStr(),i=SN.indexOf(s.stage);
+ return `<div class="kc${od?' overdue':''}"><b onclick="A.edit('sponsors','${s.id}')">${esc(s.org)}</b>
+ <div class="mut">${esc(s.type)}${s.learners?' · '+num(s.learners)+' learners':''} · ${fmt(s.value)}</div>
+ ${s.stage==='Lost'?'':(s.nextStep?`<div>➜ ${esc(s.nextStep)} ${odTag(s.nextDate)}</div>`:'<div>'+tag('No next step','bad')+'</div>')}
+ ${i>=3&&i<=5&&!s.approverOk?'<div>'+tag('Payment approver not confirmed','warn')+'</div>':''}
+ <div class="mv"><button class="btn sm ghost" ${i<=0?'disabled':''} onclick="A.move('${s.id}',-1)">◀</button><button class="btn sm ghost" onclick="A.logFor('${s.id}')">+ Log</button><button class="btn sm ghost" ${i>=8?'disabled':''} onclick="A.move('${s.id}',1)">▶</button></div></div>`;
+}
+function vSponsors(){
+ const v=S.ui.spView,logs=S.interactions.filter(x=>!S.ui.intRef||x.ref===S.ui.intRef).sort((a,b)=>a.date<b.date?1:-1).slice(0,25);
+ return head('Sponsor CRM','Sponsors are an employer, organization or individual that finances language education or supports a scholarship. Track them separately from students — organizational purchasing has more stages and a longer decision cycle.',
+ `<button class="btn" onclick="A.add('sponsors')">+ Sponsor</button><button class="btn gold" onclick="A.add('interactions')">+ Log interaction</button><button class="btn ghost" onclick="A.setUI('spView','${v==='board'?'table':'board'}')">${v==='board'?'Table view':'Board view'}</button>`)+
+ `<div class="callout sm"><b>Educational sponsorship only.</b> Immigration sponsorship involves separate responsibilities and must not be promised as part of an educational sponsorship arrangement.</div>`+
+ (v==='board'?`<div class="board">${STAGES.map(([n,p])=>{const L=S.sponsors.filter(s=>s.stage===n);return `<div class="col ${p}"><h5><span>${esc(n)}</span><span>${L.length}</span></h5><div class="sm mut">${fmt(sum(L,s=>s.value))}</div>${L.map(spCard).join('')}</div>`}).join('')}</div>`:
+ tbl([['Sponsor',s=>`<b>${esc(s.org)}</b><br><span class="sm mut">${esc(s.type)} · ${esc(s.source||'')}</span>`],['Stage',s=>phaseTag((STAGES[SN.indexOf(s.stage)]||[])[1])+' '+esc(s.stage)],['Who benefits / who approves',s=>`${esc(s.beneficiary||'—')}<br><span class="sm mut">Approver: ${esc(s.approverName||'?')} ${s.approverOk?tag('confirmed','ok'):tag('unconfirmed','warn')}</span>`],['Learners',s=>num(s.learners)||'—'],['Value',s=>fmt(s.value)],['Next step',s=>`${esc(s.nextStep||'—')} ${odTag(s.nextDate)}`],['Consent',s=>consentTag(s.consent)],['',s=>`<button class="btn sm ghost" onclick="A.edit('sponsors','${s.id}')">Edit</button> <button class="btn sm ghost" onclick="A.logFor('${s.id}')">+ Log</button>`]],S.sponsors,'Add your first sponsor opportunity.'))+
+ `<div class="card"><div class="toolbar"><h3 style="margin:0">Interaction log</h3><select onchange="A.setUI('intRef',this.value)"><option value="">All sponsors</option>${S.sponsors.map(s=>`<option value="${s.id}"${S.ui.intRef===s.id?' selected':''}>${esc(s.org)}</option>`).join('')}</select></div>
+ ${tbl([['Date',x=>esc(x.date)],['Sponsor',x=>esc(spName(x.ref))],['Type',x=>esc(x.type)],['Summary',x=>esc(x.summary)],['Next step',x=>`${esc(x.nextStep)} ${odTag(x.nextDate)}`],['',x=>`<button class="btn sm ghost" onclick="A.edit('interactions','${x.id}')">Edit</button>`]],logs,'No interactions logged yet.')}</div>
+ <div class="card"><h4>Stage guide</h4>${tbl([['Stage',s=>esc(s[0])],['Phase',s=>phaseTag(s[1])],['Done when…',s=>esc(STAGE_HELP[s[0]])]],STAGES)}</div>`;
+}
+const STAGE_HELP={'Identified':'A focused target with a likely language-training problem is on your list.','Discovery meeting':'You have met a decision-maker and asked the four discovery questions.','Needs assessment':'You understand the problem, who experiences it, its cost, and the improvement worth paying for.','Proposal sent':'A tailored offer (participants, timetable, objectives, assessment, price) has been sent and the payment approver is confirmed.','Paid pilot':'A small paid pilot is agreed or running to build confidence.','Negotiation':'Price and terms are being discussed — check the contribution margin before conceding any discount.','Agreement signed':'A written agreement with every required clause is signed.','Delivering':'Classes are running; you check attendance, schedules and sponsor reporting.','Renewal':'Renewal talks started before the course ends; another group may need training.','Lost':'Closed without enrolment — note why in the sponsor notes.'};
+
+/* ===== STUDENTS ===== */
+function vStudents(){
+ const m=metrics(),q=(S.ui.stQ||'').toLowerCase();
+ let L=S.students.filter(s=>(!S.ui.stStage||s.stage===S.ui.stStage)&&(!S.ui.stSrc||s.source===S.ui.stSrc)&&(!q||(s.name+' '+(s.contact||'')+' '+(s.course||'')).toLowerCase().includes(q)));
+ const tot=L.length;L=L.slice(0,150);
+ const lostBy={};S.students.filter(s=>s.stage==='Not enrolled'&&s.lost).forEach(s=>lostBy[s.lost]=(lostBy[s.lost]||0)+1);
+ const lostArr=Object.entries(lostBy).sort((a,b)=>b[1]-a[1]);
+ const bySrc=ST_SOURCES.map(src=>{const x=S.students.filter(s=>s.source===src);const a=x.filter(s=>s.assessment==='Completed').length,e=x.filter(s=>{const i=STU.indexOf(s.stage);return i>=4&&i<=7}).length;return {src,n:x.length,a,e}}).filter(r=>r.n);
+ let diag='';
+ if(m.assessed>=5&&m.enrolled/m.assessed<0.6)diag=`<div class="alert"><span><b>Many people complete assessments but fewer than 60% enrol.</b> Before increasing advertising spend, investigate <b>price, schedule, course suitability</b> and the <b>registration process</b>.${lostArr.length?` Your top recorded reason so far: <b>${esc(lostArr[0][0])}</b> (${lostArr[0][1]}).`:' Record the reason on each “Not enrolled” learner.'}</span></div>`;
+ else if(m.inq>=20&&m.asmRate!=null&&m.asmRate<30)diag=`<div class="alert"><span><b>Few inquiries reach an assessment.</b> Look at how quickly you respond and how easy it is to book a placement assessment.</span></div>`;
+ return head('Student CRM','An inquiry is only the beginning. Move each person from interest to understanding, placement advice, a workable timetable, registration and payment.',`<button class="btn" onclick="A.add('students')">+ Inquiry</button><button class="btn ghost" onclick="A.csv('students')">⬇ CSV</button>`)+
+ `<div class="tiles">${tile('Inquiries',m.inq)}${tile('Assessed',m.assessed,pctS(m.asmRate)+' of inquiries')}${tile('Paid enrollments',m.enrolled,pctS(m.convInq)+' of inquiries')}${tile('Assessed → paid',pctS(m.convAsm))}${tile('Completion',pctS(m.completion),m.completed+' completed · '+m.withdrew+' withdrew')}</div>${diag}
+ <div class="grid2"><div class="card"><h4>By source</h4>${tbl([['Source',r=>esc(r.src)],['Inquiries',r=>r.n],['Assessed',r=>r.a],['Paid',r=>r.e],['Conversion',r=>pctS(pct(r.e,r.n))]],bySrc)}</div>
+ <div class="card"><h4>Why people did not enrol</h4>${lostArr.length?lostArr.map(([k,v])=>`<div class="frow"><span class="lb">${esc(k)}</span><div class="bar gold"><i style="width:${v/lostArr[0][1]*100}%"></i></div><span class="n">${v}</span></div>`).join(''):'<p class="mut">No reasons recorded yet.</p>'}</div></div>
+ <div class="toolbar"><input placeholder="Search name, contact, course…" value="${esc(S.ui.stQ)}" onchange="A.setUI('stQ',this.value)"><select onchange="A.setUI('stStage',this.value)"><option value="">All stages</option>${STU.map(x=>`<option${S.ui.stStage===x?' selected':''}>${x}</option>`).join('')}</select><select onchange="A.setUI('stSrc',this.value)"><option value="">All sources</option>${ST_SOURCES.map(x=>`<option${S.ui.stSrc===x?' selected':''}>${x}</option>`).join('')}</select><span class="mut sm">${tot} match${tot>150?' (showing first 150)':''}</span></div>
+ ${tbl([['Name',s=>`<b>${esc(s.name)}</b><br><span class="sm mut">${esc(s.contact||'')}</span>`],['Source',s=>esc(s.source)],['Course',s=>esc(s.course||'—')],['Stage',s=>tag(s.stage,s.stage==='Completed'?'ok':s.stage==='Not enrolled'||s.stage==='Withdrew'?'bad':STU.indexOf(s.stage)>=4?'gold':'')],['Assessment',s=>esc(s.assessment)+(s.level?' · '+esc(s.level):'')],['Next action',s=>`${esc(s.nextAction||'—')} ${odTag(s.nextDate)}`],['Consent',s=>consentTag(s.consent)],['',s=>`<button class="btn sm ghost" onclick="A.edit('students','${s.id}')">Edit</button>${STU.indexOf(s.stage)<6?` <button class="btn sm ghost" onclick="A.adv('${s.id}')">▶ ${esc(STU[STU.indexOf(s.stage)+1])}</button>`:''}`]],L,'No students match.')}`;
+}
+
+/* ===== DELIVERY ===== */
+function vDelivery(){
+ const t=todayStr();
+ return head('Delivery & Renewals','Stay involved after enrollment: check attendance, workable schedules and the information sponsors were promised. Academic staff own teaching and assessment; you spot problems early and coordinate solutions.',`<button class="btn" onclick="A.add('cohorts')">+ Cohort</button>`)+
+ (S.cohorts.length?S.cohorts.map(c=>{
+  const dd=c.end?daysBetween(t,c.end):null,low=c.attendance!==''&&num(c.attendance)<num(S.targets.attendance)&&c.completed==='';
+  const compl=c.completed!==''&&num(c.enrolled)>0?pct(num(c.completed),num(c.enrolled)):null;
+  return `<div class="card gold"><div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><div><h3 style="margin:0">${esc(c.name)}</h3><p class="sm mut">${esc(spName(c.sponsor))} · ${esc(c.start||'?')} → ${esc(c.end||'?')} ${dd!=null?(dd>=0?tag(dd+' days left'):tag('ended','')):''}</p></div>
+  <div class="toolbar"><button class="btn sm ghost" onclick="A.edit('cohorts','${c.id}')">Edit</button><button class="btn sm gold" onclick="A.print('cohort','${c.id}')">🖨 Sponsor report PDF</button></div></div>
+  <div class="tiles">${tile('Enrolled',num(c.enrolled))}${tile('Avg attendance',c.attendance===''?'—':num(c.attendance)+'%',low?'<span style="color:var(--red)">below floor of '+S.targets.attendance+'%</span>':'')}${tile('Completion',pctS(compl),c.completed===''?'fill in at the end':c.completed+' completed')}${tile('Sponsor satisfaction',num(c.sat)?num(c.sat)+' / 5':'—')}</div>
+  ${c.issues?`<div class="alert"><span><b>Problems spotted:</b> ${esc(c.issues)}</span></div>`:''}
+  <div class="rowline"><span>Sponsor report sent</span><span>${c.reportSent?tag(c.reportSent,'ok'):tag('not yet','warn')}</span></div>
+  <div class="rowline"><span>Renewal discussion started <span class="sm mut">(begin before the course ends)</span></span><span>${c.renewalStarted?tag(c.renewalStarted,'ok'):(dd!=null&&dd<=30?tag('start now','bad'):tag('not yet'))}</span></div>
+  <div class="rowline"><span>Another group needing training?</span><span>${c.newGroup?tag('Yes','ok'):tag('unknown')}</span></div></div>`}).join(''):'<div class="card"><p class="mut">Add a cohort when classes begin. Track attendance, completion, assessment findings and sponsor satisfaction.</p></div>')+
+ `<div class="card"><h4>Typical problems and who fixes them</h4><ul><li>Attendance drops because staff are repeatedly pulled to work during class → <b>the sponsor</b> must address scheduling.</li><li>Learners placed at unsuitable levels → <b>the academic team</b> reviews placement.</li><li>Sponsor not receiving promised information → <b>you</b> send the report on time.</li></ul></div>`;
+}
+
+/* ===== AGREEMENTS ===== */
+function vAgree(){
+ return head('Agreements','Written agreements must specify learners, teaching hours, payment dates, cancellation terms, reporting arrangements and the responsibilities of each party. Scholarship agreements also need eligibility and selection procedures.',`<button class="btn" onclick="A.add('agreements')">+ Agreement</button>`)+
+ tbl([['Sponsor',a=>`<b>${esc(spName(a.sponsor))}</b><br><span class="sm mut">${esc(a.type)}</span>`],['Status',a=>tag(a.status,a.status==='Signed'?'ok':a.status==='Cancelled'?'bad':'warn')],['Value',a=>fmt(a.value)],['Collected',a=>fmt(num(a.collected)-num(a.refunded))],['Outstanding',a=>fmt(Math.max(0,num(a.value)-num(a.collected)+num(a.refunded)))],['Contribution',a=>num(a.directCost)>0?fmt(num(a.value)-num(a.directCost))+'<br><span class="sm mut">'+pctS(pct(num(a.value)-num(a.directCost),num(a.value)))+'</span>':'—'],['Required clauses',a=>{const c=agrChecks(a),ok=c.filter(x=>x[1]).length;return `<div class="bar"><i style="width:${ok/c.length*100}%"></i></div><span class="sm">${ok}/${c.length}</span>${c.filter(x=>!x[1]).map(x=>'<br>'+tag('missing: '+x[0],'bad')).join('')}`}],['Renewal',a=>tag(a.renewal)],['',a=>`<button class="btn sm ghost" onclick="A.edit('agreements','${a.id}')">Edit</button> <button class="btn sm gold" onclick="A.print('agreement','${a.id}')">🖨 Draft</button>`]],S.agreements,'Create an agreement once a sponsor is ready to commit.')+
+ `<div class="callout sm">Draft agreements printed from this app are working documents. Have the final wording reviewed by a qualified adviser before signature. They deliberately state that no immigration sponsorship is offered.</div>`;
+}
+
+/* ===== PROFITABILITY ===== */
+function calcHTML(){
+ const c=S.calc,cost=num(c.teach)+num(c.mat)+num(c.adm)+num(c.asm)+num(c.fac)+num(c.oth),rev=num(c.rev),disc=num(c.disc),net=rev-disc;
+ const c0=rev-cost,c1=net-cost,m0=rev>0?c0/rev*100:0,m1=net>0?c1/net*100:0,t=num(c.target),floor=t<100?cost/(1-t/100):0,maxD=Math.max(0,rev-floor),L=num(c.learners);
+ const verdict=c1<0?`<div class="alert hi"><span><b>Below delivery cost.</b> After this discount you lose ${fmt(-c1)} on this course.</span></div>`:m1<t?`<div class="alert"><span><b>Below your ${t}% target margin.</b> The largest discount that still meets the target is about <b>${fmt(maxD)}</b>.</span></div>`:`<div class="alert low"><span>Meets your ${t}% target margin after discount.</span></div>`;
+ return `<div class="tiles">${tile('Revenue',fmt(rev),'list price')}${tile('Direct delivery cost',fmt(cost))}${tile('Contribution (no discount)',fmt(c0),m0.toFixed(1)+'% margin')}${tile('Contribution after discount',fmt(c1),m1.toFixed(1)+'% margin')}${tile('Contribution lost to discount',fmt(disc),rev>0&&c0>0?(disc/c0*100).toFixed(0)+'% of contribution':'')}</div>${verdict}
+ <div class="grid2"><div class="card"><h4>Price floors</h4><div class="rowline"><span>Minimum price for ${t}% margin</span><b>${fmt(floor)}</b></div><div class="rowline"><span>Maximum discount at target</span><b>${fmt(maxD)}</b></div><div class="rowline"><span>Break-even price (zero contribution)</span><b>${fmt(cost)}</b></div>${L?`<div class="rowline"><span>Cost per learner</span><b>${fmt(cost/L)}</b></div><div class="rowline"><span>Net price per learner</span><b>${fmt(net/L)}</b></div>`:''}</div>
+ <div class="card"><h4>Discount scenarios</h4>${tbl([['Discount',r=>r+'%'],['Net price',r=>fmt(rev*(1-r/100))],['Contribution',r=>fmt(rev*(1-r/100)-cost)],['Margin',r=>{const n=rev*(1-r/100);return n>0?((n-cost)/n*100).toFixed(1)+'%':'—'}]],[0,5,10,15,20,25,30])}</div></div>`;
+}
+function vProfit(){
+ return head('Profitability & Discount Guard','Large discounts can fill classrooms while weakening finances. Understand the contribution consequence before negotiating. (Guide example: SAR 12,000 revenue − SAR 8,000 cost = SAR 4,000; a SAR 3,000 discount leaves SAR 1,000.)')+
+ `<div class="card"><div class="toolbar"><b>Load from an offer:</b><select onchange="if(this.value)A.calcFrom(this.value)"><option value="">Choose…</option>${S.offers.map(o=>`<option value="${o.id}">${esc(o.name)}</option>`).join('')}</select><button class="btn sm ghost" onclick="A.calcReset()">Reset to guide example</button></div>
+ <div class="formgrid">${bnd('calc.rev','Revenue / list price (SAR)',{t:'number',live:'calcUpd'})}${bnd('calc.disc','Discount requested (SAR)',{t:'number',live:'calcUpd'})}${bnd('calc.target','Target contribution margin (%)',{t:'number',live:'calcUpd'})}${bnd('calc.learners','Learners',{t:'number',live:'calcUpd'})}
+ ${bnd('calc.teach','Teaching time (SAR)',{t:'number',live:'calcUpd'})}${bnd('calc.mat','Materials (SAR)',{t:'number',live:'calcUpd'})}${bnd('calc.adm','Administration (SAR)',{t:'number',live:'calcUpd'})}${bnd('calc.asm','Assessment (SAR)',{t:'number',live:'calcUpd'})}${bnd('calc.fac','Facilities (SAR)',{t:'number',live:'calcUpd'})}${bnd('calc.oth','Other delivery expenses (SAR)',{t:'number',live:'calcUpd'})}</div></div>
+ <div id="calcOut">${calcHTML()}</div><p class="sm mut">Work with finance and academic staff to account for teaching time, materials, administration, assessment, facilities and any additional delivery expenses before quoting a sponsored course.</p>`;
+}
+
+/* ===== COMPENSATION ===== */
+function vComp(){
+ const L=S.agreements.filter(a=>a.status==='Signed'||a.status==='Completed'),R=L.map(a=>({a,b:bonusFor(a)})),total=sum(R,r=>r.b.bonus);
+ return head('Recruitment Compensation','Compensation should encourage healthy growth. A bonus accounts for collected revenue, cancellations and delivery quality — rewarding signed agreements alone can encourage promises the institute later struggles to fulfil.',`<button class="btn sm gold" onclick="A.print('comp')">🖨 Written rules PDF</button>`)+
+ `<div class="card"><h3>Bonus rules (illustrative defaults — set your own, in writing)</h3><div class="formgrid">${bnd('comp.rate','Bonus rate on net collected revenue (%)',{t:'number'})}${bnd('comp.minCompletion','Delivery quality: minimum completion rate for full bonus (%)',{t:'number'})}${bnd('comp.minSat','Delivery quality: minimum sponsor satisfaction (1–5)',{t:'number'})}${bnd('comp.partial','Payable share if only one quality test is met (%)',{t:'number'})}</div>
+ <p class="sm mut"><b>Bonus = (revenue collected − cancellations/refunds) × rate × quality factor.</b> Quality factor: 100% if both tests are met, the partial share if one is, 0% if neither. Nothing is payable on a signed agreement alone, or until delivery results exist.</p></div>
+ <div class="tiles">${tile('Total bonus payable',fmt(total),'from completed delivery results')}${tile('Agreements on hold',R.filter(r=>r.b.pending).length,'awaiting delivery results')}</div>
+ ${tbl([['Agreement',r=>`<b>${esc(spName(r.a.sponsor))}</b>`],['Net collected',r=>fmt(r.b.net)],['Completion',r=>r.b.comp==null?tag('pending','warn'):pctS(Math.round(r.b.comp*10)/10)],['Satisfaction',r=>r.b.sat==null?'—':r.b.sat.toFixed(1)],['Quality factor',r=>r.b.pending?'—':Math.round(r.b.factor*100)+'%'],['Bonus',r=>r.b.pending?tag('on hold','warn'):`<b>${fmt(r.b.bonus)}</b>`]],R,'No signed agreements yet.')}`;
+}
+
+/* ===== KPIs ===== */
+function vKpi(){
+ const m=metrics(),T=S.targets,rows=[['Meetings & discovery conversations',m.meetings,T.meetings],['Proposals / offers sent',m.proposals,T.proposals],['Placement assessments completed',m.assessed,T.assessments]];
+ const bySrc=SP_SOURCES.map(s=>{const x=S.sponsors.filter(p=>p.source===s);return {s,n:x.length,w:x.filter(p=>SN.indexOf(p.stage)>=6&&p.stage!=='Lost').length}}).filter(r=>r.n);
+ return head('KPIs & Funnel','Activity targets keep discipline, but outcomes determine whether the work creates value. The most useful measures: enrollment conversion, acquisition cost, completion, contribution margin, sponsor renewal and referrals.',`<button class="btn sm gold" onclick="A.print('summary')">🖨 Manager Report PDF</button>`)+
+ `<h3>Outcomes</h3><div class="tiles">${tile('Enrollment conversion',pctS(m.convInq),'inquiries → paid ('+m.enrolled+'/'+m.inq+')')}${tile('Assessment → paid',pctS(m.convAsm))}${tile('Student acquisition cost',m.cacS==null?'—':fmt(m.cacS),'spend ÷ paid enrollments')}${tile('Sponsor acquisition cost',m.cacSp==null?'—':fmt(m.cacSp),'spend ÷ signed sponsors')}${tile('Completion rate',pctS(m.completion))}${tile('Contribution margin',pctS(m.margin),fmt(m.contrib)+' on signed agreements')}${tile('Sponsor renewal',pctS(m.renewal))}${tile('Referrals',m.refs,pctS(m.refRate)+' of all leads')}</div>
+ <div class="grid2"><div class="card"><h3>Activity vs. targets</h3>${rows.map(([l,v,t])=>`<div class="frow"><span class="lb" style="width:210px">${esc(l)}</span><div class="bar"><i style="width:${Math.min(100,t>0?v/t*100:0)}%"></i></div><span class="n">${v} / ${t}</span></div>`).join('')}
+  <p class="sm mut">Activity is a means. If activity is high but conversion, margin and renewal are weak, fix the offer — not the volume.</p><div class="formgrid">${bnd('targets.meetings','Target: meetings',{t:'number'})}${bnd('targets.proposals','Target: proposals',{t:'number'})}${bnd('targets.assessments','Target: assessments',{t:'number'})}${bnd('targets.attendance','Attendance floor (%)',{t:'number'})}</div></div>
+ <div class="card"><h3>Acquisition spend</h3><div class="formgrid">${bnd('spend.students','Student marketing spend this period (SAR)',{t:'number'})}${bnd('spend.sponsors','Sponsor development spend this period (SAR)',{t:'number',hint:'Events, travel, materials, gifts excluded if prohibited by policy.'})}</div>
+  <h4>Sponsor source performance</h4>${tbl([['Source',r=>esc(r.s)],['Opportunities',r=>r.n],['Signed',r=>r.w]],bySrc)}</div></div>
+ <div class="card"><h3>Worked example from the guide</h3><p class="sm">100 inquiries → 40 assessments → 20 paid enrollments = <b>20%</b> inquiry-to-enrollment. If many complete assessments but few enrol, investigate price, schedule, course suitability or the registration process <i>before</i> spending more on advertising.</p></div>`;
+}
+
+/* ===== 90 DAYS ===== */
+const PLAN=[
+ ['m1','Month 1 — Establish a reliable foundation',[['m1a','Review the institute’s capabilities: courses, teachers, capacity, schedules, fees, assessment, refund policy'],['m1b','Interview current students and instructors'],['m1c','Prepare accurate promotional materials'],['m1d','Identify a focused list of prospective sponsors'],['m1e','Verify current licence / authorization and certificate wording'],['m1f','Set up the CRM and consent records']]],
+ ['m2','Month 2 — Discovery, assessment, proposals, pilot',[['m2a','Hold discovery meetings'],['m2b','Run student placement assessments'],['m2c','Send tailored proposals'],['m2d','Launch a manageable paid pilot within teaching capacity']]],
+ ['m3','Month 3 — Evaluate and decide',[['m3a','Evaluate paid enrollments'],['m3b','Review revenue collected'],['m3c','Review course contribution'],['m3d','Review attendance and learner progress'],['m3e','Review sponsor satisfaction'],['m3f','Use the findings to guide the next recruitment effort']]]
+];
+function vPlan(){
+ const m=metrics(),t=todayStr(),st=S.plan.start;let cur=null;
+ if(st){const d=daysBetween(st,t);cur=d<0?0:d<30?1:d<60?2:d<90?3:4}
+ const live={m1:`${S.courses.length} courses · ${S.teachers.length} teachers · ${S.sponsors.length} sponsor targets · ${readiness().filter(x=>x[1]).length}/7 readiness checks`,m2:`${m.meetings} discovery meetings · ${m.assessed} assessments · ${m.proposals} proposals · ${S.offers.filter(o=>o.pilot).length} pilot offer(s)`,m3:`${m.enrolled} paid enrollments · ${fmt(m.collected)} collected · margin ${pctS(m.margin)} · attendance ${m.attAvg==null?'—':m.attAvg.toFixed(0)+'%'} · satisfaction ${m.satAvg==null?'—':m.satAvg.toFixed(1)+'/5'}`};
+ return head('First 90 Days','A disciplined plan keeps recruitment within the institute’s teaching capacity.')+
+ `<div class="card"><div class="formgrid">${bnd('plan.start','Day 1 of your 90-day plan',{t:'date'})}</div>${cur===4?'<p class="sm mut">The 90 days are complete — review and set the next cycle.</p>':''}</div>`+
+ PLAN.map((p,i)=>{const done=p[2].filter(x=>S.plan.done[x[0]]).length;return `<div class="card ${cur===i+1?'gold':''}"><div class="toolbar"><h3 style="margin:0">${esc(p[1])}</h3>${cur===i+1?tag('You are here','gold'):''}<span class="mut sm">${done}/${p[2].length}</span></div><div class="bar" style="margin-bottom:8px"><i style="width:${done/p[2].length*100}%"></i></div>
+ <ul class="chk">${p[2].map(x=>`<li><input type="checkbox" style="width:auto;margin-top:4px" ${S.plan.done[x[0]]?'checked':''} onchange="A.plan('${x[0]}',this.checked)"><span>${esc(x[1])}</span></li>`).join('')}</ul><p class="sm mut"><b>Live from your data:</b> ${esc(live[p[0]])}</p></div>`}).join('');
+}
+
+/* ===== SETTINGS ===== */
+function vSettings(){
+ return head('Settings & Data','Everything is stored in this browser only. Export a backup regularly.')+
+ `<div class="card"><div class="formgrid">${bnd('inst.name','Institute name')}${bnd('inst.manager','Your name / title')}</div></div>
+ <div class="card"><h3>Data</h3><div class="toolbar"><button class="btn" onclick="A.exportJSON()">⬇ Export backup (JSON)</button><button class="btn ghost" onclick="$('#importFile').click()">⬆ Import backup</button><button class="btn ghost" onclick="A.loadSample()">Load sample data</button><button class="btn red" onclick="A.clearSample()">Clear all sample / data</button></div>
+ <p class="sm mut">“Clear” empties every record and starts you with a clean workspace (default market segments are kept). Export first if you are unsure.</p></div>
+ <div class="card"><h3>Reports (print → Save as PDF)</h3><div class="toolbar"><button class="btn gold" onclick="A.print('summary')">Manager Report</button><button class="btn gold" onclick="A.print('comp')">Compensation rules</button><button class="btn gold" onclick="A.print('manual')">User Manual & CRM Guide</button></div></div>`;
+}
+/* ===== MANUAL ===== */
+function manualHTML(){return `
+<h3>1. What this app does</h3>
+<p>The <b>Madinah Sponsorship &amp; Recruitment Compass</b> helps a sponsorship and recruitment manager at a language institute bring together three things: an institute able to deliver good education, students who need it, and organizations willing to pay for it. It follows the <b>Creed-to-Commerce™</b> flow: <b>Creed</b> (begin with trustworthy intentions) → <b>Service</b> (translate them into useful offers) → <b>Commerce</b> (sustain the work through responsible commercial management).</p>
+<div class="callout"><b>“Sponsor” in this app</b> means an employer, organization or individual that finances language education or supports a student scholarship. <b>Immigration sponsorship is a separate matter and must never be promised</b> as part of an educational sponsorship.</div>
+
+<h3>2. Quick start (about 10 minutes)</h3>
+<ol>
+<li><b>Clear the sample data</b> — Home → “Clear sample data”. (Keep it while you explore; the sample funnel mirrors the guide’s 100 → 40 → 20 example.)</li>
+<li><b>Institute Readiness</b> — enter your institute name, verify your licence/authorization and record the reference and date. Add every course with hours, capacity, schedule, fee, assessment method and refund policy. Add teacher qualifications and list every claim you intend to make.</li>
+<li><b>Market &amp; Needs</b> — for each segment you want to explore, log a discovery conversation using the four questions.</li>
+<li><b>Sponsor CRM</b> — add each prospective sponsor. Record <i>who benefits</i> and <i>who approves payment</i>.</li>
+<li><b>Student CRM</b> — add every inquiry the day it arrives, with its source.</li>
+<li><b>Home</b> — each morning, work through “Next actions” and “Needs your attention”.</li>
+</ol>
+
+<h3>3. Sponsor CRM — step by step</h3>
+<ol>
+<li><b>Add a sponsor</b> (Sponsor CRM → + Sponsor). Fill organization, type, segment, how you reached them (introduction, gathering, existing customer, referral), the benefiting group and the person who approves payment. Tick “confirmed” only once you have verified that person controls the budget — an enthusiastic supervisor may not.</li>
+<li><b>Move the card</b> along the board with ◀ ▶: Identified → Discovery meeting → Needs assessment → Proposal sent → Paid pilot → Negotiation → Agreement signed → Delivering → Renewal. Use the stage guide at the bottom of the page for what “done” means.</li>
+<li><b>Log every conversation</b> (+ Log). A <b>clear next step and date are required</b> — needs assessment, proposal, demonstration or decision meeting. The sponsor’s card updates automatically and the item appears on Home when due.</li>
+<li><b>Build the offer</b> (Offer Builder), check its profitability, then create the <b>Agreement</b>.</li>
+<li>After signing, track classes under <b>Delivery &amp; Renewals</b> and open the renewal discussion <b>before</b> the course ends.</li>
+</ol>
+<p class="sm"><b>Red edge</b> on a card = next step overdue. <b>Orange tag</b> = proposal-stage sponsor without a confirmed payment approver.</p>
+
+<h3>4. Student CRM — step by step</h3>
+<ol>
+<li><b>Add the inquiry</b> immediately with its source (walk-in, WhatsApp, Instagram, referral…), course of interest and a next action with a date.</li>
+<li>Advance with the <b>▶ button</b> through: Inquiry → Course explained → Placement assessed → Timetable confirmed → Registered &amp; paid → Attending → Completed. (Use “Withdrew” or “Not enrolled” where applicable.)</li>
+<li><b>Placement assessment:</b> set Booked, then Completed with the level. Advising the right level avoids later withdrawals.</li>
+<li><b>If someone does not enrol</b>, you must record the main reason (price, schedule, course suitability, registration process…). This tells you what to fix.</li>
+<li><b>Consent:</b> record whether the person agreed to receive marketing messages. Only contact consented people for marketing.</li>
+</ol>
+<p><b>Reading the funnel:</b> if 100 inquiries produce 40 assessments and 20 paid enrollments, inquiry-to-enrollment is 20%. If many people complete assessments but few enrol, investigate price, schedule, course suitability or registration <i>before</i> spending more on advertising.</p>
+
+<h3>5. Money rules</h3>
+<ul>
+<li><b>Profitability &amp; Discount Guard</b> — enter revenue and every delivery cost (teaching time, materials, administration, assessment, facilities, other). The app shows contribution, the price floor for your target margin and the largest discount you can afford. <i>Example: SAR 12,000 revenue − SAR 8,000 cost = SAR 4,000; a SAR 3,000 discount leaves SAR 1,000.</i></li>
+<li><b>Agreements</b> must state learners, teaching hours, payment dates, cancellation terms, reporting arrangements and each party’s responsibilities (and eligibility and selection procedure for scholarships). The completeness bar shows what is missing.</li>
+<li><b>Compensation</b> — bonus is calculated on revenue actually collected, net of cancellations, and adjusted for delivery quality (completion and sponsor satisfaction). A signed agreement alone earns nothing. The rates shown are editable illustrations; write your own rules down.</li>
+</ul>
+
+<h3>6. Honest-promise rules (the Promise Gate)</h3>
+<ul>
+<li>Describe licences and certificates exactly as they are.</li>
+<li>Never guarantee fluency within an arbitrary period; outcomes depend on attendance, starting ability and practice outside class.</li>
+<li>Make exam-preparation, employment or progression claims only when substantiated — record evidence in the Claims register.</li>
+<li>The app flags offer wording containing guarantee, fluency-promise, visa or immigration language.</li>
+<li>Reports to sponsors state limitations honestly; a modest, well-supported improvement is more credible than an impressive claim without evidence.</li>
+</ul>
+
+<h3>7. Daily, weekly and monthly rhythm</h3>
+<ul>
+<li><b>Daily (5 min):</b> Home → next actions → log each conversation with its next step → add new inquiries.</li>
+<li><b>Weekly (30 min):</b> clear overdue items; review the sponsor board; check attendance on running cohorts; send sponsor reports that are due.</li>
+<li><b>Monthly (60 min):</b> open KPIs; enter marketing spend; review conversion, acquisition cost, completion, margin, renewal and referrals; print the Manager Report.</li>
+<li><b>First 90 days:</b> follow the plan page — foundation, then discovery/proposals/pilot, then evaluation.</li>
+</ul>
+
+<h3>8. PDF reports</h3>
+<p>Click any 🖨 button (Manager Report, Proposal, Agreement draft, Sponsor report, Compensation rules, this manual). In the print window choose <b>Save as PDF</b> as the destination.</p>
+
+<h3>9. Your data and privacy</h3>
+<ul>
+<li>Everything is stored <b>only in this browser</b> on this device. Nothing is sent to a server.</li>
+<li><b>Export a backup</b> (Settings &amp; Data) regularly and before clearing the browser’s data or changing computers; <b>Import</b> restores it.</li>
+<li><b>Clear sample data</b> empties the app so you can start with real records.</li>
+<li>Collect only personal information you need. Share learner information with sponsors only within agreed privacy arrangements — reports use aggregate figures.</li>
+<li>This app supports good practice and is not legal advice; have contracts and data-protection practices reviewed by a qualified adviser.</li>
+</ul>
+
+<h3>10. Troubleshooting</h3>
+<ul>
+<li><b>“Required” message when saving</b> — fields marked * must be filled; interactions need a next step and date.</li>
+<li><b>A “Promise check failed” banner on an offer</b> — rewrite the objectives/notes without guarantees, fluency promises or visa/immigration language.</li>
+<li><b>PDF is blank or cut off</b> — use your browser’s print dialog, enable “Background graphics”, choose A4.</li>
+<li><b>Data disappeared</b> — browsers can clear site data; import your latest backup.</li>
+</ul>
+
+<h3>11. Glossary</h3>
+<ul>
+<li><b>Contribution</b> — revenue minus direct delivery costs; what is left to cover overhead and profit.</li>
+<li><b>Contribution margin</b> — contribution ÷ revenue.</li>
+<li><b>Enrollment conversion</b> — paid enrollments ÷ inquiries.</li>
+<li><b>Acquisition cost</b> — marketing or development spend ÷ paid enrollments (students) or signed sponsors.</li>
+<li><b>Sponsor renewal</b> — sponsors who renewed ÷ sponsors whose agreement reached a renewal decision.</li>
+<li><b>Pilot</b> — a small paid course that proves quality and tests scheduling and delivery costs before a larger commitment.</li>
+</ul>`}
+function vManual(){return head('User Manual & CRM Guide','Easy-to-follow instructions for the whole app, with a step-by-step CRM guide.',`<button class="btn gold" onclick="A.print('manual')">🖨 Print manual (PDF)</button>`)+`<div class="card manual">${manualHTML()}</div>`}
+
+/* ===== REPORTS ===== */
+const BISM='<div class="bism" dir="rtl" lang="ar">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div>';
+const prWrap=(title,sub,body)=>`<div class="pr">${BISM}<h1>${esc(title)}</h1><div>${esc(S.inst.name||'Your institute')} · ${sub}</div>${body}<div class="ft"><b>Creed-to-Commerce™</b> · The Balanced Middle Path Academy, LLC (BMPA) · Generated ${new Date().toLocaleDateString('en-GB')}</div></div>`;
+const kv=(a)=>`<div class="kv">${a.map(([k,v])=>`<b>${esc(k)}</b><span>${v}</span>`).join('')}</div>`;
+const ptable=(h,rows)=>rows.length?`<table><thead><tr>${h.map(x=>`<th>${x}</th>`).join('')}</tr></thead><tbody>${rows.map(r=>`<tr>${r.map(c=>`<td>${c}</td>`).join('')}</tr>`).join('')}</tbody></table>`:'<p><i>None recorded.</i></p>';
+
+function rSummary(){
+ const m=metrics(),al=alerts(),rd=readiness();
+ return prWrap('Sponsorship & Recruitment — Manager Report',new Date().toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'})+(S.inst.manager?' · '+esc(S.inst.manager):''),
+ `<h2>1 · Creed — readiness (${rd.filter(x=>x[1]).length}/${rd.length})</h2>${ptable(['Check','Status'],rd.map(x=>[esc(x[0]),x[1]?'✔ Met':'✖ Not met']))}
+ <h2>2 · Service — pipeline & funnel</h2>
+ ${ptable(['Sponsor stage','Sponsors','Estimated value'],STAGES.map(([n])=>{const L=S.sponsors.filter(s=>s.stage===n);return [esc(n),L.length,fmt(sum(L,s=>s.value))]}))}
+ ${ptable(['Student funnel','Count','Rate'],[['Inquiries',m.inq,'—'],['Placement assessments completed',m.assessed,pctS(m.asmRate)+' of inquiries'],['Paid enrollments',m.enrolled,pctS(m.convInq)+' of inquiries · '+pctS(m.convAsm)+' of assessed'],['Completed',m.completed,pctS(m.completion)+' completion'],['Withdrew',m.withdrew,'—']])}
+ <h2>3 · Commerce — results</h2>
+ ${ptable(['Measure','Value'],[['Signed agreement value',fmt(m.won)],['Revenue collected (net of refunds)',fmt(m.collected)],['Contribution on signed agreements',fmt(m.contrib)+' ('+pctS(m.margin)+')'],['Student acquisition cost',m.cacS==null?'—':fmt(m.cacS)],['Sponsor acquisition cost',m.cacSp==null?'—':fmt(m.cacSp)],['Sponsor renewal rate',pctS(m.renewal)],['Referrals',m.refs+' ('+pctS(m.refRate)+' of leads)'],['Average attendance',m.attAvg==null?'—':m.attAvg.toFixed(0)+'%'],['Average sponsor satisfaction',m.satAvg==null?'—':m.satAvg.toFixed(1)+' / 5']])}
+ ${ptable(['Agreement','Status','Value','Collected','Required clauses'],S.agreements.map(a=>{const c=agrChecks(a);return [esc(spName(a.sponsor)),esc(a.status),fmt(a.value),fmt(num(a.collected)-num(a.refunded)),c.filter(x=>x[1]).length+'/'+c.length]}))}
+ ${ptable(['Cohort','Dates','Enrolled','Attendance','Completed'],S.cohorts.map(c=>[esc(c.name),esc((c.start||'?')+' → '+(c.end||'?')),num(c.enrolled),c.attendance===''?'—':c.attendance+'%',c.completed===''?'—':c.completed]))}
+ <h2>4 · Items needing attention</h2>${al.length?'<ul>'+al.map(x=>`<li>${esc(x.txt)}</li>`).join('')+'</ul>':'<p>None.</p>'}
+ <div class="note">Figures are drawn from the records entered in the app. Sample data, if still loaded, is illustrative only.</div>`);
+}
+function rOffer(id){
+ const o=S.offers.find(x=>x.id===id);const hrs=num(o.weeks)*num(o.sessions)*num(o.hrs),risk=RISKY.test([o.name,o.objectives,o.assessment,o.activities,o.notes].join(' '));
+ return prWrap('Training Proposal','Prepared for '+esc(o.sponsor?spName(o.sponsor):'the sponsor'),
+ `${risk?'<div class="note" style="border-color:#B3261E;background:#fdeceb"><b>DO NOT SEND.</b> This text fails the promise check (guarantee, fluency-promise, visa or immigration wording). Rewrite it first.</div>':''}
+ <h2>${esc(o.name)}</h2>${kv([['Participants',num(o.participants)],['Duration',num(o.weeks)+' weeks'],['Sessions',num(o.sessions)+' per week × '+num(o.hrs)+' hour(s)'],['Total teaching hours',hrs],['Format',o.pilot?'Small paid pilot':'Full programme'],['Final report to sponsor',o.report?'Yes — attendance, completion, assessment findings and recommended next steps':'Not included']])}
+ <h2>Learning objectives</h2><p>${nl2(o.objectives||'To be agreed with the academic team.')}</p>
+ <h2>Assessment process</h2><p>${nl2(o.assessment||'To be confirmed.')}</p>
+ <h2>Activities and methods</h2><p>${nl2(o.activities||'To be confirmed.')}</p>
+ <h2>Investment</h2>${kv([['Total price',`<b>${fmt(o.price)}</b>`],['Per learner',num(o.participants)?fmt(num(o.price)/num(o.participants)):'—']])}
+ ${S.inst.lic==='Verified'&&S.inst.licNote?`<h2>Authorization</h2><p>${nl2(S.inst.licNote)}</p>`:''}
+ <div class="note">${o.approved?'Objectives have been agreed with the institute’s academic team. ':'Objectives are subject to agreement with the academic team. '}Learning results depend on attendance, learners’ starting ability and practice outside class; no fluency level or examination result is guaranteed. This is an educational training offer only and does not include any immigration sponsorship.</div>`);
+}
+function rAgreement(id){
+ const a=S.agreements.find(x=>x.id===id),o=S.offers.find(x=>x.id===a.offer),sch=(a.type||'').startsWith('Scholarship');
+ const f=(v)=>(v&&String(v).trim())?nl2(v):'<span style="background:#fff0d1">[TO BE COMPLETED]</span>';
+ const n=num;let i=0;const cl=(t,b)=>`<h2>${++i}. ${t}</h2><p>${b}</p>`;
+ return prWrap('Language Training Agreement — DRAFT','Between '+esc(S.inst.name||'the Institute')+' and '+esc(spName(a.sponsor)),
+ `<div class="note">Working draft for discussion. Have the final wording reviewed by a qualified adviser before signature.</div>
+ ${cl('Programme',esc(a.type)+(o?' — '+esc(o.name):''))}
+ ${cl('Learners',n(a.learners)>0?n(a.learners)+' learner(s).':f(''))}
+ ${cl('Teaching hours',n(a.hours)>0?n(a.hours)+' teaching hours.':f(''))}
+ ${cl('Fees and payment dates',`Total value: <b>${fmt(a.value)}</b>.<br>${f(a.payments)}`)}
+ ${cl('Cancellation terms',f(a.cancel))}
+ ${cl('Reporting arrangements',f(a.reporting))}
+ ${cl('Responsibilities of the Institute',f(a.instResp))}
+ ${cl('Responsibilities of the Sponsor',f(a.spResp))}
+ ${sch?cl('Eligibility criteria',f(a.eligibility))+cl('Selection procedure',f(a.selection)):''}
+ ${cl('No guarantee of outcomes','The Institute will deliver the agreed teaching and assessment. Results depend on attendance, starting ability and practice outside class; no level of fluency or examination result is guaranteed.')}
+ ${cl('Educational sponsorship only','This agreement covers language education only. It does not include, and the Institute does not offer or imply, any immigration sponsorship.')}
+ ${cl('Privacy','Learner personal information will be handled responsibly and shared with the Sponsor only within privacy arrangements agreed in writing.')}
+ <table style="margin-top:24px"><tr><td style="height:70px">For the Institute<br>Name / signature / date</td><td>For the Sponsor<br>Name / signature / date</td></tr></table>`);
+}
+function rCohort(id){
+ const c=S.cohorts.find(x=>x.id===id),compl=c.completed!==''&&num(c.enrolled)>0?pct(num(c.completed),num(c.enrolled)):null;
+ return prWrap('Sponsor Progress Report','For '+esc(spName(c.sponsor))+' · '+esc(c.name),
+ `${kv([['Course dates',esc((c.start||'?')+' → '+(c.end||'?'))],['Learners enrolled',num(c.enrolled)],['Average attendance',c.attendance===''?'—':c.attendance+'%'],['Completion',c.completed===''?'In progress':num(c.completed)+' of '+num(c.enrolled)+' ('+pctS(compl)+')']])}
+ <h2>Assessment findings</h2><p>${nl2(c.findings||'To be provided at the next assessment point.')}</p>
+ ${c.issues?`<h2>Points to address together</h2><p>${nl2(c.issues)}</p>`:''}
+ <h2>Recommended next steps</h2><p>${nl2(c.next||'—')}</p>
+ <h2>Limitations</h2><p>${nl2(c.limits||'Figures reflect this group only and depend on attendance, starting ability and practice outside class.')}</p>
+ <div class="note">Figures are aggregate. Individual learner information is shared only within the privacy arrangements agreed with the sponsor.</div>`);
+}
+function rComp(){
+ const C=S.comp;
+ return prWrap('Recruitment Compensation — Written Rules','Effective date: ____________',
+ `<h2>Principles</h2><ul><li>Compensation encourages healthy growth, not signatures alone.</li><li>Bonus is calculated on revenue actually collected, net of cancellations and refunds.</li><li>Bonus is adjusted for delivery quality.</li></ul>
+ <h2>Formula</h2><p><b>Bonus = (revenue collected − cancellations/refunds) × ${C.rate}% × quality factor</b></p>
+ ${ptable(['Quality test','Threshold'],[['Completion rate (completed ÷ enrolled)','at least '+C.minCompletion+'%'],['Average sponsor satisfaction','at least '+C.minSat+' / 5']])}
+ <p>Quality factor: 100% when both tests are met; ${C.partial}% when one is met; 0% when neither is met. No bonus is payable on a signed agreement before delivery results are recorded.</p>
+ <h2>Acknowledgement</h2><p>Manager: ____________________ &nbsp; Director: ____________________ &nbsp; Date: __________</p>
+ <div class="note">Rates and thresholds are set by the institute’s leadership and finance team; review them with a qualified adviser.</div>`);
+}
+function rManual(){return prWrap('User Manual & CRM Guide','Madinah Sponsorship & Recruitment Compass','<div class="manual">'+manualHTML().replace(/<h3>/g,'<h2>').replace(/<\/h3>/g,'</h2>')+'</div>')}
+
+/* ===== Actions ===== */
+const A={
+ go(t){TAB=t;try{history.replaceState(null,'','#'+t)}catch(e){}$('#nav').classList.remove('open');render();window.scrollTo(0,0)},
+ bind(el){const p=el.dataset.bind.split('.');let o=S;for(let i=0;i<p.length-1;i++)o=o[p[i]];const k=p[p.length-1];o[k]=el.type==='checkbox'?el.checked:(el.type==='number'?num(el.value):el.value);save();if(el.dataset.live)A[el.dataset.live]();else render()},
+ add(c,pre){openForm(c,null,pre)},edit(c,id){openForm(c,id)},
+ closeForm(){$('#modal').hidden=true;$('#modal').innerHTML=''},
+ saveForm(coll,id){
+  const sc=SCH[coll],v={},er=$('#ferr');
+  for(const f of sc.fields){const el=$('#f_'+f.k);if(!el)continue;const t=f.t||'text';v[f.k]=t==='check'?el.checked:t==='number'?(el.value===''?'':num(el.value)):el.value.trim()}
+  for(const f of sc.fields){if(f.req&&(v[f.k]===''||v[f.k]==null)){er.textContent='“'+f.l+'” is required.';return}}
+  if(sc.validate){const e=sc.validate(v);if(e){er.textContent=e;return}}
+  let rec;
+  if(id){rec=S[coll].find(x=>x.id===id);Object.assign(rec,v)}else{rec=Object.assign({id:uid(),created:todayStr()},v);S[coll].push(rec)}
+  if(sc.after)sc.after(rec);
+  save();A.closeForm();render();
+  if(coll==='offers'&&RISKY.test([rec.name,rec.objectives,rec.assessment,rec.activities,rec.notes].join(' ')))toast('⚠ Saved — but this wording fails the promise check. Rewrite before sending.');else toast('Saved');
+ },
+ del(coll,id){
+  if(!confirm('Delete this record? This cannot be undone.'))return;
+  S[coll]=S[coll].filter(x=>x.id!==id);
+  if(coll==='sponsors')S.interactions=S.interactions.filter(x=>x.ref!==id);
+  save();A.closeForm();render();toast('Deleted');
+ },
+ move(id,dir){
+  const s=S.sponsors.find(x=>x.id===id);if(!s)return;const i=SN.indexOf(s.stage);
+  if(s.stage==='Lost'){s.stage='Identified'}else{const ni=Math.max(0,Math.min(8,i+dir));s.stage=SN[ni]}
+  save();render();
+  if(s.stage==='Proposal sent'&&!s.approverOk)toast('Proposal stage: confirm who approves payment.');
+  if(s.stage==='Agreement signed')toast('Create the written agreement under Agreements.');
+  if(s.stage==='Delivering')toast('Add the cohort under Delivery & Renewals.');
+ },
+ logFor(id){openForm('interactions',null,{ref:id})},
+ adv(id){const s=S.students.find(x=>x.id===id),i=STU.indexOf(s.stage);if(i>=6)return;s.stage=STU[i+1];if(s.stage==='Placement assessed')s.assessment='Completed';if(s.stage==='Registered & paid'&&!num(s.paid)){const c=S.courses.find(x=>x.name===s.course);if(c)s.paid=num(c.fee)}save();render()},
+ setUI(k,v){S.ui[k]=v;save();render()},
+ setC(coll,id,v){const r=S[coll].find(x=>x.id===id);r.consent=v;r.consentDate=todayStr();save();render()},
+ eth(k,v){S.ethics[k]=v;save();render()},
+ plan(k,v){S.plan.done[k]=v;save();render()},
+ calcUpd(){const el=$('#calcOut');if(el)el.innerHTML=calcHTML()},
+ calcFrom(id){const o=S.offers.find(x=>x.id===id);if(!o)return;Object.assign(S.calc,{rev:num(o.price),disc:0,learners:num(o.participants),teach:num(o.cTeach),mat:num(o.cMat),adm:num(o.cAdm),asm:num(o.cAsm),fac:num(o.cFac),oth:num(o.cOth)});save();A.go('profit')},
+ calcReset(){S.calc=blank().calc;save();render()},
+ toLead(id){
+  const d=S.discovery.find(x=>x.id===id);if(S.sponsors.some(s=>s.org.toLowerCase()===d.org.toLowerCase())){toast('A sponsor with this name already exists.');return}
+  S.sponsors.push({id:uid(),org:d.org,type:'Employer',seg:d.seg,source:'Other',stage:'Discovery meeting',beneficiary:d.who||'',contactName:'',contactInfo:'',approverName:'',approverRole:'',approverOk:false,learners:'',value:'',nextStep:d.next,nextDate:addDays(todayStr(),3),consent:'Not recorded',consentDate:'',notes:'From discovery conversation '+d.date,created:todayStr()});
+  save();toast('Added to Sponsor CRM at Discovery meeting stage.');render();
+ },
+ clearSample(){
+  if(!confirm(S.sample?'Remove all sample data and start with a clean workspace?':'This will erase ALL your records in this browser. Export a backup first if unsure. Continue?'))return;
+  S=blank();save();render();toast('Workspace cleared — ready for your real records.');
+ },
+ loadSample(){if(!confirm('Replace current records with sample data?'))return;S=sampleData();save();render();toast('Sample data loaded')},
+ dl(name,text,mime){const b=new Blob([text],{type:mime||'text/plain'}),u=URL.createObjectURL(b),a=document.createElement('a');a.href=u;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),500)},
+ exportJSON(){A.dl('sponsorship-compass-backup-'+todayStr()+'.json',JSON.stringify(S,null,1),'application/json')},
+ csv(kind){
+  const q=v=>'"'+String(v==null?'':v).replace(/"/g,'""')+'"';let rows;
+  if(kind==='students')rows=[['Name','Contact','Source','Course','Stage','Assessment','Level','Next action','Next date','Paid','Consent']].concat(S.students.map(s=>[s.name,s.contact,s.source,s.course,s.stage,s.assessment,s.level,s.nextAction,s.nextDate,s.paid,s.consent]));
+  else rows=[['Type','Name','Contact','Consent date']].concat(S.students.filter(s=>s.consent==='Given').map(s=>['Student',s.name,s.contact,s.consentDate])).concat(S.sponsors.filter(s=>s.consent==='Given').map(s=>['Sponsor',s.org+(s.contactName?' — '+s.contactName:''),s.contactInfo,s.consentDate]));
+  A.dl('compass-'+kind+'-'+todayStr()+'.csv','﻿'+rows.map(r=>r.map(q).join(',')).join('\n'),'text/csv');
+ },
+ importJSON(file){
+  const r=new FileReader();r.onload=()=>{try{const o=JSON.parse(r.result);if(!Array.isArray(o.sponsors)||!Array.isArray(o.students))throw new Error('Not a Compass backup');const b=blank();for(const k in o){if(o[k]&&typeof o[k]==='object'&&!Array.isArray(o[k])&&b[k]&&typeof b[k]==='object')Object.assign(b[k],o[k]);else b[k]=o[k]}S=b;save();render();toast('Backup imported')}catch(e){alert('Could not import: '+e.message)}};r.readAsText(file);
+ },
+ print(kind,id){
+  let h;try{h=({summary:rSummary,offer:()=>rOffer(id),agreement:()=>rAgreement(id),cohort:()=>rCohort(id),comp:rComp,manual:rManual})[kind]()}catch(e){toast('Could not build the report: '+e.message);return}
+  $('#printRoot').innerHTML=h;setTimeout(()=>window.print(),200);
+ }
+};
+
+/* ===== Navigation & render ===== */
+const NAV=[['home','⌂ Home'],['grp','CREED — Trustworthy Intention'],['ready','Institute Readiness'],['consent','Consent & Ethics'],['market','Market & Needs'],['grp','SERVICE — Useful Offers'],['offers','Offer Builder'],['sponsors','Sponsor CRM'],['students','Student CRM'],['delivery','Delivery & Renewals'],['grp','COMMERCE — Responsible Management'],['agree','Agreements'],['profit','Profitability'],['comp','Compensation'],['kpi','KPIs & Funnel'],['plan','First 90 Days'],['grp','SUPPORT'],['manual','User Manual & CRM Guide'],['settings','Settings & Data']];
+const V={home:vHome,ready:vReady,consent:vConsent,market:vMarket,offers:vOffers,sponsors:vSponsors,students:vStudents,delivery:vDelivery,agree:vAgree,profit:vProfit,comp:vComp,kpi:vKpi,plan:vPlan,manual:vManual,settings:vSettings};
+function render(){
+ try{
+  $('#instLine').textContent=(S.inst.name||'Your institute')+' · Creed-to-Commerce™';
+  const al=alerts();
+  $('#nav').innerHTML=NAV.map(([k,l])=>{if(k==='grp')return `<div class="grp">${esc(l)}</div>`;const n=al.filter(x=>x.go===k&&x.lv!=='low').length;return `<a class="${k===TAB?'on':''}" onclick="A.go('${k}')">${esc(l)}${n?`<span class="dot">${n}</span>`:''}</a>`}).join('');
+  $('#main').innerHTML=(V[TAB]||vHome)();
+ }catch(e){$('#main').innerHTML='<div class="card"><h3>Something went wrong</h3><p>'+esc(e.message)+'</p><button class="btn" onclick="A.go(\'home\')">Back to Home</button></div>';console.error(e)}
+}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')A.closeForm()});
+$('#importFile').addEventListener('change',e=>{if(e.target.files[0])A.importJSON(e.target.files[0]);e.target.value=''});
+const h0=(location.hash||'').slice(1);if(V[h0])TAB=h0;
+save();render();
+</script>
+</body>
+</html>
